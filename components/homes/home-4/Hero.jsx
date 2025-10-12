@@ -29,7 +29,7 @@ export default function Hero() {
               <div className="inner">
                 <span className="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
                   Clinical Psychologist & Psychotherapist
-                </span>
+                </span><br />
                 <h1 className="title tmp-scroll-trigger tmp-fade-in animation-order-2">
                   Manse M Doshi
                 </h1>
@@ -39,7 +39,7 @@ export default function Hero() {
                 <div className="button-area-banner-three tmp-scroll-trigger tmp-fade-in animation-order-4">
                   <Link
                     className="tmp-btn hover-icon-reverse radius-round"
-                    href={`/portfolio-details`}
+                    href={`/about-white`}
                   >
                     <span className="icon-reverse-wrapper">
                       <span className="btn-text">View Portfolio</span>

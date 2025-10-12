@@ -9,10 +9,10 @@ export default function Chat() {
         <i className="fas fa-times" />
       </label>
       <div className="wrapper">
-        <div className="head-text">Let's chat with me? - Online</div>
+        <div className="head-text">Let's chat? - Online</div>
         <div className="chat-box">
           <div className="desc-text">
-            Please fill out the form below to start chatting with me directly.
+            Please fill out the form below to sen message to me directly.
           </div>
           <form
             className="tmp-dynamic-form"

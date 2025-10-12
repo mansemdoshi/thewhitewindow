@@ -54,7 +54,7 @@ export default function Footer5() {
                         <a href="#">Terms And Condition</a>
                       </li>
                       <li>
-                        <Link href={`/contact`}>Contact Us</Link>
+                        <Link href={`/contact`}>Contact</Link>
                       </li>
                     </ul>
                     <ul className="tmp-menu link-hover light-content">
@@ -65,7 +65,7 @@ export default function Footer5() {
                         <a href="#">Terms And Condition</a>
                       </li>
                       <li>
-                        <Link href={`/contact-white`}>Contact Us</Link>
+                        <Link href={`/contact-white`}>Contact</Link>
                       </li>
                     </ul>
                   </div>
