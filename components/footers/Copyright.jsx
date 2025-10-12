@@ -10,16 +10,16 @@ export default function Copyright() {
               <p className="copy-right-para tmp-link-animation">
                 ©{" "}
                 <a
-                  href="https://themeforest.net/user/inversweb/portfolio"
+                  href="https://thewhitewindow.com"
                   target="_blank"
                 >
-                  Inversweb {new Date().getFullYear()}
+                  The White Window {new Date().getFullYear()}
                 </a>{" "}
                 | All Rights Reserved
               </p>{" "}
               <ul className="tmp-link-animation dark-content">
                 <li>
-                  <a href="#">Trams &amp; Condition</a>
+                  <a href="#">Terms &amp; Conditions</a>
                 </li>
                 <li>
                   <a href="#">Privacy Policy</a>
@@ -30,7 +30,7 @@ export default function Copyright() {
               </ul>
               <ul className="tmp-link-animation light-content">
                 <li>
-                  <a href="#">Trams &amp; Condition</a>
+                  <a href="#">Terms &amp; Conditions</a>
                 </li>
                 <li>
                   <a href="#">Privacy Policy</a>

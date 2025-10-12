@@ -1,18 +1,16 @@
 import Copyright from "@/components/footers/Copyright";
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Header from "@/components/headers/Header1";
 import Blogs from "@/components/common/Blogs";
 import Brands from "@/components/common/Brands";
 import Contact from "@/components/common/Contact2";
 import Education from "@/components/common/Education2";
 import Facts from "@/components/common/Facts";
-import Hero from "@/components/homes/home-1/Hero";
+import Hero from "@/components/homes/home-4/Hero";
 import Portfolio from "@/components/common/Portfolio2";
-import Services from "@/components/common/Services";
-import Services2 from "@/components/common/Services3";
+import Services from "@/components/common/Services5";
 import Skills from "@/components/common/Skills";
-import Skills2 from "@/components/common/Skills2";
-import Testimonials from "@/components/homes/home-1/Testimonials";
+import Testimonials from "@/components/homes/home-5/Testimonials";
+import Footer from "@/components/footers/Footer1";
 import CommonComponents from "@/components/common/CommonComponents";
 
 export const metadata = {
@@ -24,22 +22,24 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Header1 />
-      <Hero />
-      <Services />
-      <Facts />
-      <Skills />
-      <Services2 />
-      <Education />
-      <Brands />
-      <Portfolio />
-      <Skills2 />
-      <Testimonials />
-      <Contact />
-      <Blogs />
-      <Footer1 />
-      <Copyright />
-      <CommonComponents />
+      <div className="tmp-white-version">
+        <Header />
+        <Hero />
+        <Services isLight/>
+        <Facts />
+        {/* <Skills /> */}
+        {/* <Services /> */}
+        {/* <Education /> */}
+        {/* <Brands /> */}
+        {/* <Portfolio /> */}
+        {/* <Skills /> */}
+        {/* <Testimonials /> */}
+        <Contact />
+        {/* <Blogs /> */}
+        <Footer />
+        <Copyright />
+        <CommonComponents />
+      </div>
     </>
   );
 }

@@ -1,14 +1,14 @@
 export const footerLinks = [
+  { href: "/", label: "Home" },
   { href: "/about", label: "About Me" },
-  { href: "/service", label: "Service" },
+  { href: "/service", label: "Services" },
   { href: "/contact", label: "Contact Me" },
-  { href: "/blog", label: "Blog Post" },
-  { href: "/contact", label: "Pricing" },
+  { href: "/faq", label: "FAQs" },
 ];
 export const footerLinksWhite = [
+  { href: "/", label: "Home" },
   { href: "/about-white", label: "About Me" },
-  { href: "/service-white", label: "Service" },
-  { href: "/contact-white", label: "Contact Me" },
-  { href: "/blog-white", label: "Blog Post" },
-  { href: "/contact-white", label: "Pricing" },
+  { href: "/service-white", label: "Services" },
+  { href: "/contact-white", label: "Contact" },
+  { href: "/faq-white", label: "FAQs" },
 ];

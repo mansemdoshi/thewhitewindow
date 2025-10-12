@@ -11,15 +11,15 @@ export default function Hero() {
             <Image
               className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
               alt="banner-img-3"
-              src="/assets/images/banner/banner-user-image-four.png"
-              width={959}
+              src="/assets/images/banner/banner-user-image-four-manse.png"
+              width={957}
               height={778}
             />
           </div>
           <div className="banner-four-right-bg-img">
             <Image
               alt="banner-img-3"
-              src="/assets/images/banner/banner-four-right-bg-img.png"
+              src="/assets/images/banner/banner-four-right-bg-img.png" 
               width={630}
               height={830}
             />
@@ -28,15 +28,13 @@ export default function Hero() {
             <div className="col-lg-4 col-md-6">
               <div className="inner">
                 <span className="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  Web Developer
+                  Clinical Psychologist & Psychotherapist
                 </span>
                 <h1 className="title tmp-scroll-trigger tmp-fade-in animation-order-2">
-                  Jackson Clark
+                  Manse M Doshi
                 </h1>
                 <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                  Outsourcing can provide corporate businesses with several
-                  advantages, incl b usinesses Outsourcing can provide usinesses
-                  Outsourcing can provide
+                  Supporting your journey toward healing, growth, and self-discovery - one conversation at a time.
                 </p>
                 <div className="button-area-banner-three tmp-scroll-trigger tmp-fade-in animation-order-4">
                   <Link

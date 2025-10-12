@@ -6,9 +6,9 @@ import Script from 'next/script';
 import { ToastContainer } from "react-toastify";
 export const metadata = {
   title:
-    "Home || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "Home || The White Window",
   description:
-    "Reeni is a modern personal portfolio template for designers, developers, content writer, cleaner, programmer, fashion designer, model, Influencer and freelancers. Fully responsive, SEO-friendly, Bootstrap and easy to customize.",
+    "Manse M Doshi - Clinical Psychologist & Psychotherapist",
 };
 export default function RootLayout({ children }) {
   return (

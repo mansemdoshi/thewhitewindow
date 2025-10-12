@@ -20,8 +20,7 @@ export default function Facts() {
                 </h3>
               </div>
               <p className="year-para">
-                Business consulting consultants provide expert advice and guida
-                the a businesses to help theme their performance efficiency
+                  as a Clinical Psychologist and Psychotherapist, guiding individuals, couples, and families through diverse mental health challenges
               </p>
             </div>
           </div>

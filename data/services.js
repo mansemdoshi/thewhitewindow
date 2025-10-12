@@ -253,31 +253,45 @@ export const serviceCards2 = [
 
 export const serviceCards3 = [
   {
-    iconClass: "fa-regular fa-code",
-    title: "Ui/Ux Design",
+    iconClass: "fa-regular fa-person",
+    title: "Individual Pyshotherapy",
     description:
-      "Each one showcases my approach and dedication to detail, creativity Each one showcases my approach and dedication to detail, creativity",
+      "Individual therapy provides a safe and confidential space for you to explore your thoughts, feelings, and behaviors with the guidance of a trained therapist.",
     animationOrder: 4,
   },
   {
-    iconClass: "fa-light fa-palette",
-    title: "Web Development",
+    iconClass: "fa-light fa-brain",
+    title: "Psychological Assessments",
     description:
-      "Business consulting consul us to a provide expert advice businesses Each one showcases my approach and dedication to detail, creativity",
+      "Psychological assessments are tools used by mental health professionals to evaluate and understand an individual's cognitive, emotional, and behavioral functioning.",
     animationOrder: 5,
   },
   {
-    iconClass: "fa-light fa-print",
-    title: "Business Solutions",
+    iconClass: "fa-light fa-spa",
+    title: "Cognitive Behavioral Therapy",
     description:
-      "Each one showcases my approach and dedication to detail, creativity Each one showcases my approach and dedication to detail, creativity",
+      "Cognitive Behavioral Therapy (CBT) is a goal-oriented and evidence-based approach that helps individuals identify and change negative thought patterns and behaviors.",
     animationOrder: 4,
   },
   {
     iconClass: "fa-regular fa-handshake",
-    title: "Profit Partners",
+    title: "Acceptance and Commitment Therapy",
     description:
-      "Business consulting consul us to a provide expert advice businesses Each one showcases my approach and dedication to detail, creativity",
+      "Acceptance and Commitment Therapy (ACT) is a mindfulness-based therapeutic approach that encourages individuals to accept their thoughts and feelings rather than fighting or feeling guilty for them.",
+    animationOrder: 5,
+  },
+  {
+    iconClass: "fa-regular fa-dove",
+    title: "Trauma-Informed Therapy",
+    description:
+      "Trauma-informed therapy is an approach that recognizes the widespread impact of trauma and seeks to create a safe and supportive environment for healing.",
+    animationOrder: 5,
+  },
+  {
+    iconClass: "fa-regular fa-heart",
+    title: "Grief & Loss Counseling",
+    description:
+      "Grief and loss counseling provides support and guidance to individuals coping with the emotional challenges associated with losing a loved one or experiencing significant life changes.",
     animationOrder: 5,
   },
 ];

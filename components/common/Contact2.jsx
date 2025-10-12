@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { toast } from "react-toastify";
 
 export default function Contact({
-  parentClass = "get-in-touch-area tmp-section-gapTop",
+  parentClass = "get-in-touch-area tmp-section-gapTop tmp-section-gapBottom",
 }) {
   const form = useRef();
 

@@ -25,22 +25,22 @@ export default function Footer1({
                     <Link href={`/`}>
                       <Image
                         className="logo-dark"
-                        alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                        alt="The White Window | Manse M Doshi |  Clinical Psychologist & Psychotherapist"
                         src={darkLogo}
                         width={121}
                         height={41}
                       />
                       <Image
                         className="logo-white"
-                        alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                        alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                         src={lightLogo}
-                        width={121}
-                        height={40}
+                        width={61}
+                        height={20}
                       />
                     </Link>
                   </div>
-                  <p className="description">
-                    <span>Get Ready</span> To Create Great
+                  <p className="description"  style={{ maxWidth: "500px", maxHeight: "150px" }}>
+                    <span>Opening a Window</span> to Healing and Hope
                   </p>
                   <form
                     onSubmit={(e) => e.preventDefault()}
@@ -55,7 +55,7 @@ export default function Footer1({
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="single-footer-wrapper quick-link-wrap">
-                  <h5 className="ft-title">Quick Link</h5>
+                  <h5 className="ft-title">Quick Links</h5>
                   <ul className="ft-link tmp-link-animation dark-content">
                     {footerLinks.map((item, index) => (
                       <li key={index}>
@@ -80,19 +80,19 @@ export default function Footer1({
                       <span className="ft-icon">
                         <i className="fa-solid fa-envelope" />
                       </span>
-                      <a href="#">example@gmail.com</a>
+                      <a href="#">info@thewhitewindow.com</a>
                     </li>
                     <li>
                       <span className="ft-icon">
                         <i className="fa-solid fa-location-dot" />
                       </span>
-                      3891 Ranchview Dr. Richardson
+                      North Vancouver, BC, Canada
                     </li>
                     <li>
                       <span className="ft-icon">
                         <i className="fa-solid fa-phone" />
                       </span>
-                      <a href="#">01245789321</a>
+                      <a href="#">+1 (778) 386-7657</a>
                     </li>
                   </ul>
                   <div className="social-link footer">

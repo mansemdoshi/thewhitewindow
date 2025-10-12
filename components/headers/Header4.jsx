@@ -18,7 +18,7 @@ export default function Header4() {
                     <Image
                       className="logo-dark"
                       alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
-                      src="/assets/images/logo/white-logo-reeni.png"
+                      src="/assets/images/logo/logo-dark.png"
                       width={121}
                       height={41}
                     />

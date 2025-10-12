@@ -11,14 +11,14 @@ export default function Sidebar() {
             <a href="index.html" className="logo">
               <img
                 className="logo-dark"
-                alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                 src="/assets/images/logo/white-logo-reeni.png"
                 width={121}
                 height={41}
               />
               <img
                 className="logo-white"
-                alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                 src="/assets/images/logo/logo-white.png"
                 width={121}
                 height={40}
@@ -34,32 +34,23 @@ export default function Sidebar() {
             </div>
           </div>
           <div className="content-wrapper">
-            <div className="image-area-feature">
-              <a href="index.html">
-                <img
-                  alt="personal-logo"
-                  src="/assets/images/logo/man.png"
-                  width={340}
-                  height={196}
-                />
-              </a>
-            </div>
             <h5 className="title mt--30">
-              Freelancer delivering exceptional Webflow, and Next.js solutions.
+              Manse M Doshi
             </h5>
             <p className="disc">
-              I am a skilled freelancer specializing in Webflow development,
-              Figma design, and Next.js projects. I deliver creative, dynamic,
-              and user-centric web solutions.
+              I'm a Clinical Psychologist and Psychotherapist dedicated to fostering mental well‑being 
+              through evidence‑based care. With expertise in individual, couples, and family therapy, 
+              I help clients navigate challenges with clarity and resilience. My approach blends clinical 
+              rigor with empathy, creating a safe and supportive space for personal growth.
             </p>
             <div className="short-contact-area">
               {/* single contact information */}
               <div className="single-contact">
                 <i className="fa-solid fa-phone" />
                 <div className="information tmp-link-animation">
-                  <span>Call Now</span>
+                  <span>Phone</span>
                   <a href="#" className="number">
-                    +92 (8800) - 98670
+                    +1 (778) 386-7657
                   </a>
                 </div>
               </div>
@@ -68,9 +59,9 @@ export default function Sidebar() {
               <div className="single-contact">
                 <i className="fa-solid fa-envelope" />
                 <div className="information tmp-link-animation">
-                  <span>Mail Us</span>
+                  <span>E-Mail</span>
                   <a href="#" className="number">
-                    example@info.com
+                    info@thewhitewindow.com
                   </a>
                 </div>
               </div>
@@ -79,15 +70,15 @@ export default function Sidebar() {
               <div className="single-contact">
                 <i className="fa-solid fa-location-crosshairs" />
                 <div className="information tmp-link-animation">
-                  <span>My Address</span>
-                  <span className="number">66 Broklyant, New York 3269</span>
+                  <span>Address</span>
+                  <span className="number">Hoskins Rd, North Vancouver, BC V7K 2P4, Canada</span>
                 </div>
               </div>
               {/* single contact information end */}
             </div>
             {/* social area start */}
             <div className="social-wrapper mt--20">
-              <span className="subtitle">find with me</span>
+              <span className="subtitle">find me on social media</span>
               <div className="social-link">
                 <a href="#">
                   <i className="fa-brands fa-instagram" />

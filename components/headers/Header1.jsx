@@ -6,7 +6,7 @@ import Link from "next/link";
 import { openSidebar } from "@/utlis/toggleSidebar";
 import { openMobilemenu } from "@/utlis/toggleMobilemenu";
 export default function Header1({
-  darkLogo = "/assets/images/logo/white-logo-reeni.png",
+  darkLogo = "/assets/images/logo/logo-dark.png",
   lightLogo = "/assets/images/logo/logo-white.png",
 }) {
   return (

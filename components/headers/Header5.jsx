@@ -14,7 +14,7 @@ export default function Header5() {
                 alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
                 width="121"
                 height="41"
-                src="assets/images/logo/white-logo-reeni.png"
+                src="assets/images/logo/logo-dark.png"
               />
             </Link>
           </div>
