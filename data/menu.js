@@ -1,28 +1,9 @@
 export const menuItems = [
   { label: "Home", href: "/", isLink: false },
-  { label: "About", href: "/about", isLink: true },
+  { label: "About Me", href: "/about-white", isLink: true },
   {
-    label: "Services",
-    href: "#",
-    hasDropdown: true,
-    submenu: [
-      { label: "Service", href: "/service" },
-      { label: "Service Details", href: "/service-details/success-architects" },
-    ],
-  },
-  {
-    label: "Project",
-    href: "#",
-    hasDropdown: true,
-    submenu: [
-      { label: "Project", href: "/project" },
-      {
-        label: "Project Details",
-        href: "/project-details/my-portfolio-of-innovation",
-      },
-    ],
-  },
-  { label: "Contact", href: "/contact", isLink: true },
+    label: "Services", href: "/service-white", isLink: true },
+  { label: "Contact", href: "/contact-white", isLink: true },
 ];
 export const menuItemsLight = [
   { label: "Home", href: "/", isLink: false },

@@ -77,8 +77,8 @@ export default function Contact() {
                 <div className="contact-icon">
                   <i className="fa-solid fa-phone" />
                 </div>
-                <h3 className="title">Call Me</h3>
-                <p className="para">+1 (778) 386-7657</p>
+                <h3 className="title">Phone</h3>
+                <p className="para">+1 (778) 386-76XX</p>
               </div>
             </div>
           </div>

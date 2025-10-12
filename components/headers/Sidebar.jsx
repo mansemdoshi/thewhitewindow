@@ -50,7 +50,7 @@ export default function Sidebar() {
                 <div className="information tmp-link-animation">
                   <span>Phone</span>
                   <a href="#" className="number">
-                    +1 (778) 386-7657
+                    +1 (778) 386-76XX
                   </a>
                 </div>
               </div>
