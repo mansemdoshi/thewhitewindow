@@ -10,9 +10,9 @@ import Link from "next/link";
 import Hero from "@/components/homes/home-20/Hero";
 export const metadata = {
   title:
-    "Home 20 || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "Home 20 || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 import CommonComponents from "@/components/common/CommonComponents";
 export default function page() {

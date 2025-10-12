@@ -32,14 +32,14 @@ export default function MobileMenuOnepage() {
               <a href="index.html" className="logo-area">
                 <img
                   className="logo-dark"
-                  alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
-                  src="/assets/images/logo/white-logo-reeni.png"
+                  alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
+                  src="/assets/images/logo/logo-dark.png"
                   width={121}
                   height={41}
                 />
                 <img
                   className="logo-white"
-                  alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                  alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                   src="/assets/images/logo/logo-white.png"
                   width={121}
                   height={40}

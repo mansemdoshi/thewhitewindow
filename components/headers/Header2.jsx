@@ -19,14 +19,14 @@ export default function Header2({
                 <Link href={`/`}>
                   <Image
                     className="logo-dark"
-                    alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                    alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                     src={darkLogo}
                     width={121}
                     height={41}
                   />
                   <Image
                     className="logo-white"
-                    alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                    alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                     src={lightLogo}
                     width={121}
                     height={40}

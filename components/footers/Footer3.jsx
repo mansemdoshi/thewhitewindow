@@ -10,7 +10,7 @@ import MobileMenu from "../headers/MobileMenu";
 import MobileMenuOnepage from "../headers/MobileMenuOnepage";
 import { footerLinks, footerLinksWhite } from "@/data/footerLinks";
 export default function Footer3({
-  darkLogo = "/assets/images/logo/white-logo-reeni.png",
+  darkLogo = "/assets/images/logo/logo-dark.png",
   lightLogo = "/assets/images/logo/logo-white.png",
 }) {
   return (
@@ -25,14 +25,14 @@ export default function Footer3({
                     <Link href={`/`}>
                       <Image
                         className="logo-dark"
-                        alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                        alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                         src={darkLogo}
                         width={121}
                         height={41}
                       />
                       <Image
                         className="logo-white"
-                        alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                        alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                         src={lightLogo}
                         width={121}
                         height={40}

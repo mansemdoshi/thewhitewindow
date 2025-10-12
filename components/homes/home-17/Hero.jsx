@@ -9,17 +9,16 @@ export default function Hero() {
         <div className="row align-items-center pt--50">
           <div className="col-lg-7">
             <div className="banner-right-thumb-left-content">
-              <span className="pre-title">Welcome to my world</span>
+              <span className="pre-title">Welcome to The White Window</span>
               <h1 className="title">
-                I’m Jane Cooper <br />A{" "}
+                I’m Manse M Doshi <br />A{" "}
                 <span className="header-caption">
                   <span className="cd-headline clip is-full-width">
                     <TyperComponent
                       strings={[
-                        "Teacher",
-                        "Instructor",
-                        "Content Writer",
-                        "Influencer",
+                        "Clinical Psychologist",
+                        "Psychotherapist",
+                        "Clinical Counselor",
                       ]}
                     />
                   </span>

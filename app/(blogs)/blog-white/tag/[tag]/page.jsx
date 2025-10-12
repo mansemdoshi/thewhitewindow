@@ -9,9 +9,9 @@ import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
   title:
-    "Blog || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "Blog || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 export default async function TagPage({ params }) {
   let tagTitle = "";

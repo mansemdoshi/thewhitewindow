@@ -16,9 +16,9 @@ import React from "react";
 
 export const metadata = {
   title:
-    "Home 17 || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "Home 17 || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 export default function page() {
   return (

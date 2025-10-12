@@ -61,12 +61,12 @@ export default function Contact({
                     <span className="subtitle">GET IN TOUCH</span>
                   </div>
                   <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-                    Elevate your brand with Me
+                    A safe space is just a message away.
                   </h2>
                   <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    ished fact that a reader will be distrol acted bioiiy desig
-                    ished fact that a reader will acted ished fact that a reader
-                    will be distrol acted
+                    I’d love to hear from you. Whether you’re seeking therapy, have questions about services, 
+                    or would like to schedule a consultation, please reach out. Your journey toward clarity 
+                    and well‑being can begin with a simple message.
                   </p>
                 </div>
               </div>
@@ -149,7 +149,7 @@ export default function Contact({
                             >
                               <span className="icon-reverse-wrapper">
                                 <span className="btn-text">
-                                  Appointment Now
+                                  Send Message
                                 </span>
                                 <span className="btn-icon">
                                   <i className="fa-sharp fa-regular fa-arrow-right" />

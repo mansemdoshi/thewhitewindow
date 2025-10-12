@@ -172,7 +172,7 @@ export default function Contact({
                             id="submit"
                           >
                             <span className="icon-reverse-wrapper">
-                              <span className="btn-text">Appointment Now</span>
+                              <span className="btn-text">Send Message</span>
                               <span className="btn-icon">
                                 <i className="fa-sharp fa-regular fa-arrow-right" />
                               </span>

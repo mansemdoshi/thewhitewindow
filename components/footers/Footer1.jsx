@@ -10,7 +10,7 @@ import MobileMenu from "../headers/MobileMenu";
 import MobileMenuOnepage from "../headers/MobileMenuOnepage";
 import { footerLinks, footerLinksWhite } from "@/data/footerLinks";
 export default function Footer1({
-  darkLogo = "/assets/images/logo/white-logo-reeni.png",
+  darkLogo = "/assets/images/logo/logo-dark.png",
   lightLogo = "/assets/images/logo/logo-white.png",
 }) {
   return (

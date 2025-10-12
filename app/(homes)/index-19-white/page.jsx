@@ -17,9 +17,9 @@ import BodyClassToggler from "@/components/common/BodyClassToggler";
 
 export const metadata = {
   title:
-    "Home 19 || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "Home 19 || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 export default function page() {
   return (

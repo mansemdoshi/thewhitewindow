@@ -12,7 +12,7 @@ export default function Sidebar() {
               <img
                 className="logo-dark"
                 alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
-                src="/assets/images/logo/white-logo-reeni.png"
+                src="/assets/images/logo/logo-dark.png"
                 width={121}
                 height={41}
               />

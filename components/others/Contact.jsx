@@ -58,8 +58,7 @@ export default function Contact() {
                   <i className="fa-solid fa-location-dot" />
                 </div>
                 <h3 className="title">Address</h3>
-                <p className="para">Dhaka 102, utl 1216, road 45</p>
-                <p className="para">house of street</p>
+                <p className="para">Hoskins Rd, North Vancouver, BC V7K 2P4, Canada</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -68,11 +67,8 @@ export default function Contact() {
                   <i className="fa-solid fa-envelope" />
                 </div>
                 <h3 className="title">E-mail</h3>
-                <a href="mailto:themespark11@gmail.com">
-                  <p className="para">hasan@yourmail.com</p>
-                </a>
-                <a href="mailto:themespark11@gmail.com">
-                  <p className="para">themespark11@gmail.com</p>
+                <a href="mailto:info@thewhitewindw.com">
+                  <p className="para">info@thewhitewindw.com</p>
                 </a>
               </div>
             </div>
@@ -82,8 +78,7 @@ export default function Contact() {
                   <i className="fa-solid fa-phone" />
                 </div>
                 <h3 className="title">Call Me</h3>
-                <p className="para">0000 - 000 - 000 00</p>
-                <p className="para">+1234 - 000</p>
+                <p className="para">+1 (778) 386-7657</p>
               </div>
             </div>
           </div>
@@ -101,12 +96,12 @@ export default function Contact() {
                       <span className="subtitle">GET IN TOUCH</span>
                     </div>
                     <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-                      Elevate your brand with Me
+                      A safe space is just a message away.
                     </h2>
                     <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                      ished fact that a reader will be distrol acted bioiiy
-                      desig ished fact that a reader will acted ished fact that
-                      a reader will be distrol acted
+                      I’d love to hear from you. Whether you’re seeking therapy, have questions about services, 
+                    or would like to schedule a consultation, please reach out. Your journey toward clarity 
+                    and well‑being can begin with a simple message.
                     </p>
                   </div>
                 </div>
@@ -189,7 +184,7 @@ export default function Contact() {
                               >
                                 <span className="icon-reverse-wrapper">
                                   <span className="btn-text">
-                                    Appointment Now
+                                    Send Message
                                   </span>
                                   <span className="btn-icon">
                                     <i className="fa-sharp fa-regular fa-arrow-right" />

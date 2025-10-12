@@ -138,7 +138,7 @@ export default function Contact3() {
                       className="tmp-btn hover-icon-reverse radius-round w-100"
                     >
                       <span className="icon-reverse-wrapper">
-                        <span className="btn-text">Appointment Now</span>
+                        <span className="btn-text">Send Message</span>
                         <span className="btn-icon">
                           <i className="fa-sharp fa-regular fa-arrow-right" />
                         </span>

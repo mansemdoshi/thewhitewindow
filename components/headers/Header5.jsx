@@ -11,7 +11,7 @@ export default function Header5() {
           <div className="logo">
             <Link href={`/`}>
               <img
-                alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                 width="121"
                 height="41"
                 src="assets/images/logo/logo-dark.png"

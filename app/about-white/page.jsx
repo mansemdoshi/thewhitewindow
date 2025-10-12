@@ -1,25 +1,25 @@
 import Contact from "@/components/common/Contact2";
+import Copyright from "@/components/footers/Copyright";
 import Education from "@/components/common/Education2";
 import Facts from "@/components/common/Facts";
-import Pricing from "@/components/common/Pricing";
-import Services from "@/components/common/Services5";
+import Hero from "@/components/homes/home-17/Hero";
 import Skills from "@/components/common/Skills";
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer from "@/components/footers/Footer1";
+import Header from "@/components/headers/Header1";
 import Link from "next/link";
 import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
   title:
-    "About || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "About || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 export default function page() {
   return (
     <>
       <div className="tmp-white-version">
-        <Header1 />
+        <Header />
         <div className="breadcrumb-area breadcrumb-bg">
           <div className="container">
             <div className="row">
@@ -40,13 +40,14 @@ export default function page() {
             </div>
           </div>
         </div>
-        <Services isLight />
-        <Skills parentClass="tmp-skill-area tmp-section-gapBottom" />
+        <Hero />
+        <Skills parentClass="tmp-skill-area tmp-section-gapTop tmp-section-gapBottom" />
         <Facts />
         <Education />
-        <Pricing />
         <Contact parentClass="get-in-touch-area tmp-section-gapBottom tmp-section-gapTop" />
-        <Footer1 /> <CommonComponents />
+        <Footer /> 
+        <Copyright />
+        <CommonComponents />
       </div>
     </>
   );

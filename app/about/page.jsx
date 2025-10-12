@@ -11,9 +11,9 @@ import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
   title:
-    "About || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "About || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 export default function page() {
   return (

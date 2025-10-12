@@ -9,7 +9,7 @@ import Sidebar from "../headers/Sidebar";
 import MobileMenu from "../headers/MobileMenu";
 import MobileMenuOnepage from "../headers/MobileMenuOnepage";
 export default function Footer4({
-  darkLogo = "/assets/images/logo/white-logo-reeni.png",
+  darkLogo = "/assets/images/logo/logo-dark.png",
   lightLogo = "/assets/images/logo/logo-white.png",
 }) {
   return (
@@ -23,7 +23,7 @@ export default function Footer4({
                   <Link href={`/`}>
                     <Image
                       className="logo-dark dark-content"
-                      alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                      alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                       src={darkLogo}
                       width={121}
                       height={41}
@@ -34,7 +34,7 @@ export default function Footer4({
                     >
                       <Image
                         className=""
-                        alt="Reeni - Personal Portfolio HTML Template for developers and freelancers"
+                        alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
                         src={lightLogo}
                         width={121}
                         height={40}

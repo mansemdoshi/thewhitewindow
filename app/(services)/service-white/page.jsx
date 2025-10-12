@@ -1,30 +1,30 @@
-import Pricing from "@/components/common/Pricing";
 import Copyright from "@/components/footers/Copyright";
 
-import Footer3 from "@/components/footers/Footer3";
+import Footer from "@/components/footers/Footer1";
 
-import Header1 from "@/components/headers/Header1";
+import Header from "@/components/headers/Header1";
+import Pricing from "@/components/common/Pricing";
 import Services from "@/components/services/Services";
 import Link from "next/link";
 import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
   title:
-    "Services || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "Services || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 export default function page() {
   return (
     <>
       <div className="tmp-white-version">
-        <Header1 />
+        <Header />
         <div className="breadcrumb-area breadcrumb-bg">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="breadcrumb-inner text-center">
-                  <h1 className="title split-collab">Service</h1>
+                  <h1 className="title split-collab">Services</h1>
                   <ul className="page-list">
                     <li className="tmp-breadcrumb-item">
                       <Link href={`/`}>Home</Link>
@@ -32,7 +32,7 @@ export default function page() {
                     <li className="icon">
                       <i className="fa-solid fa-angle-right" />
                     </li>
-                    <li className="tmp-breadcrumb-item active">Service</li>
+                    <li className="tmp-breadcrumb-item active">Services</li>
                   </ul>
                 </div>
               </div>
@@ -41,8 +41,9 @@ export default function page() {
         </div>
         <Services isLight />
         <Pricing parentClass="our-price-plan-area tmp-section-gapBottom" />
-        <Footer3 />
-        <Copyright /> <CommonComponents />
+        <Footer />
+        <Copyright /> 
+        <CommonComponents />
       </div>
     </>
   );

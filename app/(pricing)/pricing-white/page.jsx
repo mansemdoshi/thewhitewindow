@@ -1,30 +1,20 @@
-import Blogs from "@/components/blog/Blogs";
+import Pricing from "@/components/common/Pricing";
 import Copyright from "@/components/footers/Copyright";
-import Footer1 from "@/components/footers/Footer1";
+
+import Footer3 from "@/components/footers/Footer3";
+
 import Header1 from "@/components/headers/Header1";
-import { allBlogs } from "@/data/blogs";
-import { slugify } from "@/utlis/slugify";
+import Services from "@/components/services/Services";
 import Link from "next/link";
 import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
   title:
-    "Blog || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+    "Services || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
     "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
-export default async function CategoryPage({ params }) {
-  let categoryTitle = "";
-  const { category } = await params;
-  const blogs = allBlogs.filter((blog) =>
-    blog.categories?.some((el) => slugify(el) == category)
-  );
-  allBlogs[0].categories.forEach((element) => {
-    if (slugify(element) == category) {
-      categoryTitle = element;
-    }
-  });
-
+export default function page() {
   return (
     <>
       <div className="tmp-white-version">
@@ -34,7 +24,7 @@ export default async function CategoryPage({ params }) {
             <div className="row">
               <div className="col-lg-12">
                 <div className="breadcrumb-inner text-center">
-                  <h1 className="title split-collab">{categoryTitle}</h1>
+                  <h1 className="title split-collab">Service</h1>
                   <ul className="page-list">
                     <li className="tmp-breadcrumb-item">
                       <Link href={`/`}>Home</Link>
@@ -42,19 +32,15 @@ export default async function CategoryPage({ params }) {
                     <li className="icon">
                       <i className="fa-solid fa-angle-right" />
                     </li>
-                    <li className="tmp-breadcrumb-item">Blog</li>
-                    <li className="icon">
-                      <i className="fa-solid fa-angle-right" />
-                    </li>
-                    <li className="tmp-breadcrumb-item active">Category</li>
+                    <li className="tmp-breadcrumb-item active">Service</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Blogs allBlogs={blogs} isLight />
-        <Footer1 />
+        <Pricing parentClass="our-price-plan-area tmp-section-gapBottom" />
+        <Footer3 />
         <Copyright /> <CommonComponents />
       </div>
     </>

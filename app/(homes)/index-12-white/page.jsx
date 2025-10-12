@@ -15,9 +15,9 @@ import Header5 from "@/components/headers/Header5";
 
 export const metadata = {
   title:
-    "Home 12 || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "Home 12 || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 export default function page() {
   return (

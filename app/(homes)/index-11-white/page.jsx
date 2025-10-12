@@ -13,9 +13,9 @@ import Footer4 from "@/components/footers/Footer4";
 
 export const metadata = {
   title:
-    "Home 11 || Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "Home 11 || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
-    "Personal Portfolio React Nextjs Template | Freelancer & Developer Portfolio",
+    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
 export default function page() {
   return (
