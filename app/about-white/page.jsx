@@ -41,9 +41,9 @@ export default function page() {
           </div>
         </div>
         <Hero />
+        <Education />
         <Skills parentClass="tmp-skill-area tmp-section-gapTop tmp-section-gapBottom" />
         <Facts />
-        <Education />
         <Contact parentClass="get-in-touch-area tmp-section-gapBottom tmp-section-gapTop" />
         <Footer /> 
         <Copyright />

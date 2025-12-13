@@ -40,7 +40,7 @@ export default function page() {
           </div>
         </div>
         <Services isLight />
-        <Pricing parentClass="our-price-plan-area tmp-section-gapBottom" />
+        {/* <Pricing parentClass="our-price-plan-area tmp-section-gapBottom" /> */}
         <Footer />
         <Copyright /> 
         <CommonComponents />

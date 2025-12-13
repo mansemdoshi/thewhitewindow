@@ -19,7 +19,6 @@ export default function Services({ isLight = false }) {
                   key={service.id}
                 >
                   <h2 className="service-card-num">
-                    <span>{service.num}</span>
                     {service.title}
                   </h2>
                   <p className="service-para">{service.description}</p>
@@ -40,7 +39,6 @@ export default function Services({ isLight = false }) {
                   key={service.id}
                 >
                   <h2 className="service-card-num">
-                    <span>{service.num}</span>
                     {service.title}
                   </h2>
                   <p className="service-para">{service.description}</p>

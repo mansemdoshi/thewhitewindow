@@ -93,7 +93,7 @@ export default function Contact({
             <div className="col-lg-7">
               <div className="contact-inner">
                 <div className="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  <span className="title">GET IN TOUCH</span>
+                  <span className="title">TAKE THE FIRST STEP</span>
                 </div>
                 <div className="contact-form">
                   <div id="form-messages" className="error" />

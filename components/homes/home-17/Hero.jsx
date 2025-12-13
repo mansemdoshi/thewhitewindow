@@ -25,9 +25,24 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="disc">
-                A personal portfolio is a collection of your work, achievements,
-                and skills that highlights your abilities and professional
-                growth. It serves as
+                For me, therapy is a space of possibility where understanding
+                ourselves can open doors to healing, balance, and change.<br/><br/>
+                Over the last 20 years, I have worked with children, adolescents,
+                adults, and couples, each with their own story, struggles, and
+                strengths. Through this journey, I’ve seen how awareness can shift
+                behaviour, how empathy can rebuild connection, and how even
+                small insights can reshape entire lives.<br/><br/>
+                As a clinical psychologist, my work draws from Cognitive
+                Behavioural Therapy (CBT), Play Therapy, and other
+                evidence-based approaches.<br/><br/>
+                But beyond techniques, I believe in building a therapeutic
+                relationship that feels safe, authentic, and non-judgmental.
+                My sessions are collaborative. We explore patterns, emotions, and
+                experiences together, translating insight into practical tools for
+                everyday life.<br/><br/>
+                Whether it’s helping a child find words for their feelings, a teenager
+                navigate self-esteem, or an adult rediscover their strengths, my
+                goal is to make therapy a place where growth feels possible.
               </p>
               <div className="find-me-on">
                 <h2 className="find-me-on-title">Find me on</h2>

@@ -140,7 +140,7 @@ export const services4 = [
     iconClass: "fa-regular fa-person",
     title: "Individual Pyshotherapy",
     description:
-      "Individual therapy provides a safe and confidential space for you to explore your thoughts, feelings, and behaviors with the guidance of a trained therapist.",
+      "A confidential space to explore emotions, patterns, and challenges. Sessions are customised to help you build emotional resilience and gain a deeper understanding of yourself.",
     animationOrder: 1,
     column: 1,
   },
@@ -150,7 +150,7 @@ export const services4 = [
     iconClass: "fa-light fa-brain",
     title: "Psychological Assessments",
     description:
-      "Psychological assessments are tools used by mental health professionals to evaluate and understand an individual's cognitive, emotional, and behavioral functioning.",
+      "Structured assessments that provide clarity on emotional, behavioural, or learning concerns. These insights guide effective treatment and self-awareness.",
     animationOrder: 2,
     column: 2,
   },
@@ -160,7 +160,7 @@ export const services4 = [
     iconClass: "fa-light fa-spa",
     title: "Cognitive Behavioral Therapy",
     description:
-      "Cognitive Behavioral Therapy (CBT) is a goal-oriented and evidence-based approach that helps individuals identify and change negative thought patterns and behaviors.",
+      "A practical approach that helps identify and challenge unhelpful thoughts, improving emotional regulation and resilience.",
     animationOrder: 3,
     column: 1,
   },
@@ -170,7 +170,7 @@ export const services4 = [
     iconClass: "fa-regular fa-handshake",
     title: "Acceptance and Commitment Therapy",
     description:
-      "Acceptance and Commitment Therapy (ACT) is a mindfulness-based therapeutic approach that encourages individuals to accept their thoughts and feelings rather than fighting or feeling guilty for them.",
+      "A compassionate, mindfulness-based therapy that encourages acceptance, presence, and values-driven living.",
     animationOrder: 4,
     column: 2,
   },
@@ -180,7 +180,7 @@ export const services4 = [
     iconClass: "fa-regular fa-dove",
     title: "Trauma-Informed Therapy",
     description:
-      "Trauma-informed therapy is an approach that recognizes the widespread impact of trauma and seeks to create a safe and supportive environment for healing.",
+      "Every session prioritises safety, empathy, and pacing, helping you heal from trauma and reclaim emotional strength.",
     animationOrder: 5,
     column: 1,
   },
@@ -190,9 +190,39 @@ export const services4 = [
     iconClass: "fa-regular fa-heart",
     title: "Grief & Loss Counseling",
     description:
-      "Grief and loss counseling provides support and guidance to individuals coping with the emotional challenges associated with losing a loved one or experiencing significant life changes.",
+      "A safe environment to process grief and rediscover balance after loss and help you acknowledge emotions, navigate change, and slowly rebuild meaning and peace.",
     animationOrder: 6,
     column: 2,
+  },
+  {
+    id: 7,
+    num: "07.",
+    iconClass: "fa-regular fa-heart",
+    title: "CBT for Children & Adolescents",
+    description:
+      "Age-appropriate cognitive behavioural strategies that help young people manage anxiety, worry, behavioural challenges, and low mood. Therapy includes play-based techniques, parent coaching, and clear home-based tasks to support progress between sessions.",
+    animationOrder: 6,
+    column: 1,
+  },
+  {
+    id: 8,
+    num: "08.",
+    iconClass: "fa-regular fa-heart",
+    title: "Parental Guidance & Support",
+    description:
+      "A supportive space where parents learn practical strategies and emotional tools for everyday parenting challenges. From toddler routines to adolescent conflict, sessions combine evidence-based techniques and guidance so families can function with more ease and confidence.",
+    animationOrder: 6,
+    column: 2,
+  },
+  {
+    id: 9,
+    num: "09.",
+    iconClass: "fa-regular fa-heart",
+    title: "Premarital Counselling",
+    description:
+      "A practical, evidence-based space to prepare for marriage covering opics like communication, expectations, conflict strategies, family boundaries, and emotional readiness.",
+    animationOrder: 6,
+    column: 1,
   },
 ].map((elm) => {
   return {

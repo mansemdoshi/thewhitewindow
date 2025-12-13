@@ -34,7 +34,7 @@ export default function Hero() {
                   Manse M Doshi
                 </h1>
                 <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                  Supporting your journey toward healing, growth, and self-discovery - one conversation at a time.
+                  Guiding emotional well-being through clarity, compassion, and clinically grounded care.
                 </p>
                 <div className="button-area-banner-three tmp-scroll-trigger tmp-fade-in animation-order-4">
                   <Link
@@ -59,7 +59,7 @@ export default function Hero() {
                 <div className="year-expariance-wrap">
                   {/* <h3 class="title "><span class="counter">25</span></h3> */}
                   <h3 className="counter title">
-                    <OdometerComponent max={25} />
+                    <OdometerComponent max={24} />
                   </h3>
                   <p className="para">
                     Years Of <br />

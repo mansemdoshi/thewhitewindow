@@ -1,8 +1,8 @@
 export const counters = [
-  { count: 10, suffix: "k+", text: "Counseling Hours", order: 1 },
-  { count: 20, suffix: "k+", text: "Pschotherapy Sessions", order: 2 },
-  { count: 200, suffix: "+", text: "Customer Reviews", order: 3 },
-  { count: 1000, suffix: "+", text: "Satisfied Clients", order: 4 },
+  { count: 10000, suffix: "+", text: "Counseling Hours", order: 1 },
+  { count: 20000, suffix: "+", text: "Pschotherapy Sessions", order: 2 },
+  { count: 200, suffix: "+", text: "Client Testimonials", order: 3 },
+  { count: 1000, suffix: "+", text: "Success Stories", order: 4 },
 ];
 
 export const countData = [

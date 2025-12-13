@@ -1,30 +1,30 @@
 export const educationExperienceData = [
   {
-    role: "Trainer Marketing",
-    duration: "2005-2009",
+    role: "Master's in Clinical Psychology",
+    duration: "2001-2003",
     description:
-      "A personal portfolio is a curated collection of an individual's professional work, showcasing their skills, experience A personal portfolio.",
+      "SNDT University, Mumbai",
     animationOrder: 1,
   },
   {
-    role: "Assistant Director",
-    duration: "2010-2014",
+    role: "Licensed by the Rehabilitation Council of India",
+    duration: "2012",
     description:
-      "Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs.",
+      "License Number: A36403",
     animationOrder: 2,
   },
   {
-    role: "Design Assistant",
-    duration: "2008-2012",
+    role: "Advanced Training in Tobacco Cessation Therapy",
+    duration: "2012",
     description:
-      "I’ve had the privilege of working with various clients, from startups to established companies, helping bring their visions to life.",
+      "Mayo Clinic, USA",
     animationOrder: 3,
   },
   {
-    role: "Design Assistant",
-    duration: "2008-2012",
+    role: "Certified Play Therapist",
+    duration: "2006",
     description:
-      "Each project here showcases my commitment to excellence and adaptability, tailored to meet each client’s unique needs a personal.",
+      "British Association of Play Therapists, UK",
     animationOrder: 4,
   },
 ];

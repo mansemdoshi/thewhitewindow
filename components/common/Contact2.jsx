@@ -58,13 +58,15 @@ export default function Contact({
               <div className="col-lg-5">
                 <div className="section-head text-align-left">
                   <div className="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                    <span className="subtitle">GET IN TOUCH</span>
+                    <span className="subtitle">TAKE THE FIRST STEP</span>
                   </div>
                   <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
                     A safe space is just a message away.
                   </h2>
                   <p className="description tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    I’d love to hear from you. Whether you’re seeking therapy, have questions about services, 
+                    Let’s talk about what’s been weighing
+                    on you and find a way forward, one
+                    step at a time. I’d love to hear from you. Whether you’re seeking therapy, have questions about services, 
                     or would like to schedule a consultation, please reach out. Your journey toward clarity 
                     and well‑being can begin with a simple message.
                   </p>

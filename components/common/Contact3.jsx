@@ -54,7 +54,7 @@ export default function Contact3() {
         <div className="contact-get-in-touch-wrap">
           <div className="section-head text-align-left mb--50">
             <h2 className="custom-title mb--20 tmp-scroll-trigger tmp-fade-in animation-order-1">
-              GET IN TOUCH
+              TAKE THE FIRST STEP
               <span>
                 <Image
                   alt="custom-line"

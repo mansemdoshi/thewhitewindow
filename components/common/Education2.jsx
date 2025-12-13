@@ -5,20 +5,6 @@ export default function Education() {
   return (
     <section className="education-experience tmp-section-gapTop" id="resume">
       <div className="container">
-        <div className="section-head mb--50">
-          <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-            <span className="subtitle">Education &amp; Experience</span>
-          </div>
-          <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-            Empowering Creativity <br />
-            through
-          </h2>
-          <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-            Business consulting consultants provide expert advice and guida
-            businesses to help them improve their performance, efficiency, and
-            organizational
-          </p>
-        </div>
         <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
           Education
           <span>
@@ -59,23 +45,42 @@ export default function Education() {
                   </span>
                 </h2>
                 <div className="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  <p className="ex-subtitle">experience</p>
-                  <h2 className="ex-name">Soft Tech (2 Years)</h2>
-                  <h3 className="ex-title">UI/UX Designer</h3>
+                  <h2 className="ex-name">Founder & Lead Psychotherapist</h2>
+                  <h3 className="ex-title">2003 - Present</h3>
                   <p className="ex-para">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum desi dolore eu fugiat nulla pariatu Duis aute
-                    irure.
+                    I work with adults, couples, and young people to
+                    address anxiety, relationship challenges, and
+                    emotional well-being through CBT, play therapy,
+                    and mindfulness-based approaches.
                   </p>
                 </div>
                 <div className="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
-                  <p className="ex-subtitle">experience</p>
-                  <h2 className="ex-name">ModernTech (3 Years)</h2>
-                  <h3 className="ex-title">App Developer</h3>
+                  <h2 className="ex-name">Consulting Psychologist – Television & Entertainment</h2>
+                  <h3 className="ex-title">2008-2010</h3>
                   <p className="ex-para">
-                    In this portfolio, you’ll find a curated selection of
-                    projects that highlight my skills in [Main Areas, e.g.,
-                    responsive web design.
+                    I have provided psychological support for
+                    contestants and teams on shows like Indian Idol
+                    and Kaun Banega Crorepati.
+                  </p>
+                </div>
+                <div className="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
+                  <h2 className="ex-name">Consulting Psychologist – Media & Publications</h2>
+                  <h3 className="ex-title">2003-2017</h3>
+                  <p className="ex-para">
+                    Shared my expert insights on mental health and
+                    relationships in leading outlets such as Bombay
+                    Times, Hindustan Times, DNA India, and Reader’s
+                    Digest.
+                  </p>
+                </div>
+                <div className="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
+                  <h2 className="ex-name">Consultant – Tobacco Cessation & Behavioural Change</h2>
+                  <h3 className="ex-title">2012</h3>
+                  <p className="ex-para">
+                    Trained at the Mayo Clinic (USA), I designed and led
+                    CBT-based tobacco cessation programs
+                    emphasizing behaviour change and relapse
+                    prevention.
                   </p>
                 </div>
               </div>

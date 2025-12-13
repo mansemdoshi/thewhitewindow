@@ -67,31 +67,12 @@ export const skills = [
 
 export const skillSections = [
   {
-    title: "Design Skill",
+    title: "Skills",
     skills: [
-      { name: "PHOTOSHOT", percent: 100, duration: "0.5s", delay: ".3s" },
-      { name: "FIGMA", percent: 95, duration: "0.6s", delay: ".4s" },
-      { name: "ADOBE XD", percent: 60, duration: "0.7s", delay: ".5s" },
-      {
-        name: "ADOBE ILLUSTRATOR",
-        percent: 70,
-        duration: "0.8s",
-        delay: ".6s",
-      },
-    ],
-  },
-  {
-    title: "Development Skill",
-    skills: [
-      { name: "PHOTOSHOT", percent: 100, duration: "0.5s", delay: ".3s" },
-      { name: "FIGMA", percent: 95, duration: "0.6s", delay: ".4s" },
-      { name: "ADOBE XD", percent: 60, duration: "0.7s", delay: ".5s" },
-      {
-        name: "ADOBE ILLUSTRATOR",
-        percent: 70,
-        duration: "0.8s",
-        delay: ".6s",
-      },
+      { name: "Clinical Psychologist & Psychotherapy", percent: 100, duration: "0.5s", delay: ".3s" },
+      { name: "Cognitive Behavioural Therapy (CBT)", percent: 100, duration: "0.5s", delay: ".4s" },
+      { name: "Relationship Counselling XD", percent: 100, duration: "0.5s", delay: ".5s" },
+      { name: "Child & Adolescent well-being", percent: 100, duration: "0.5s", delay: ".5s" },
     ],
   },
 ];
