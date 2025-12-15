@@ -22,22 +22,22 @@ export default function Profile() {
         </h3>
         <ul className="social-icon social-default color-lessdark justify-content-center">
           <li>
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/mansi.hasan">
               <i className="fa-brands fa-facebook-f" />
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com">
-              <i className="fa-brands fa-twitter" />
+            <a href="https://wa.me/+919820155137">
+              <i className="fa-brands fa-whatsapp" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/mansihasan">
               <i className="fa-brands fa-instagram" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkdin.com/">
+            <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
               <i className="fa-brands fa-linkedin-in" />
             </a>
           </li>
@@ -61,22 +61,22 @@ export default function Profile() {
         </h3>
         <ul className="social-icon social-default color-lessdark justify-content-center">
           <li>
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/mansi.hasan">
               <i className="fa-brands fa-facebook-f" />
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com">
-              <i className="fa-brands fa-twitter" />
+            <a href="https://wa.me/+919820155137">
+              <i className="fa-brands fa-whatsapp" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/mansihasan">
               <i className="fa-brands fa-instagram" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkdin.com/">
+            <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
               <i className="fa-brands fa-linkedin-in" />
             </a>
           </li>

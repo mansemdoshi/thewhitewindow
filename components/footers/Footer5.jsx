@@ -74,22 +74,22 @@ export default function Footer5() {
                   <div className="copyright-center text-center">
                     <ul className="social-icon social-default justify-content-center">
                       <li>
-                        <a target="_blank" href="https://www.facebook.com/">
+                        <a target="_blank" href="https://www.facebook.com/mansi.hasan">
                           <i className="fa-brands fa-facebook-f" />
                         </a>
                       </li>
                       <li>
-                        <a target="_blank" href="https://www.twitter.com">
-                          <i className="fa-brands fa-twitter" />
+                        <a target="_blank" href="https://wa.me/+919820155137">
+                          <i className="fa-brands fa-whatsapp" />
                         </a>
                       </li>
                       <li>
-                        <a target="_blank" href="https://www.instagram.com/">
+                        <a target="_blank" href="https://www.instagram.com/mansihasan">
                           <i className="fa-brands fa-instagram" />
                         </a>
                       </li>
                       <li>
-                        <a target="_blank" href="https://www.linkdin.com/">
+                        <a target="_blank" href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
                           <i className="fa-brands fa-linkedin-in" />
                         </a>
                       </li>

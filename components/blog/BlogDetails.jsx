@@ -128,16 +128,16 @@ export default function BlogDetails({ blog, isLight = false }) {
                     </ul>
                   </div>
                   <div className="social-link footer">
-                    <a href="#">
+                    <a href="https://www.instagram.com/mansihasan">
                       <i className="fa-brands fa-instagram" />
                     </a>
                     <a href="#">
                       <i className="fa-brands fa-linkedin-in" />
                     </a>
-                    <a href="#">
-                      <i className="fa-brands fa-twitter" />
+                    <a href="https://wa.me/+919820155137">
+                      <i className="fa-brands fa-whatsapp" />
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com/mansi.hasan">
                       <i className="fa-brands fa-facebook-f" />
                     </a>
                   </div>
@@ -161,14 +161,17 @@ export default function BlogDetails({ blog, isLight = false }) {
                           <span>September 16, 2023</span>
                         </div>
                         <div className="social-link-inner">
-                          <a href="#">
-                            <i className="fa-brands fa-facebook-f" />
-                          </a>
-                          <a href="#">
-                            <i className="fa-brands fa-twitter" />
-                          </a>
-                          <a href="#">
+                          <a href="https://www.instagram.com/mansihasan">
                             <i className="fa-brands fa-instagram" />
+                          </a>
+                          <a href="#">
+                            <i className="fa-brands fa-linkedin-in" />
+                          </a>
+                          <a href="https://wa.me/+919820155137">
+                            <i className="fa-brands fa-whatsapp" />
+                          </a>
+                          <a href="https://www.facebook.com/mansi.hasan">
+                            <i className="fa-brands fa-facebook-f" />
                           </a>
                         </div>
                       </div>
@@ -198,15 +201,18 @@ export default function BlogDetails({ blog, isLight = false }) {
                           <h6 className="title">Court Henry</h6>
                           <span>September 16, 2023</span>
                         </div>
-                        <div className="social-link-inner">
-                          <a href="#">
-                            <i className="fa-brands fa-facebook-f" />
-                          </a>
-                          <a href="#">
-                            <i className="fa-brands fa-twitter" />
-                          </a>
-                          <a href="#">
+                        <div className="social-link-inner">                          
+                          <a href="https://www.instagram.com/mansihasan">
                             <i className="fa-brands fa-instagram" />
+                          </a>
+                          <a href="#">
+                            <i className="fa-brands fa-linkedin-in" />
+                          </a>
+                          <a href="https://wa.me/+919820155137">
+                            <i className="fa-brands fa-whatsapp" />
+                          </a>
+                          <a href="https://www.facebook.com/mansi.hasan">
+                            <i className="fa-brands fa-facebook-f" />
                           </a>
                         </div>
                       </div>
@@ -236,14 +242,17 @@ export default function BlogDetails({ blog, isLight = false }) {
                           <span>September 16, 2023</span>
                         </div>
                         <div className="social-link-inner">
-                          <a href="#">
-                            <i className="fa-brands fa-facebook-f" />
-                          </a>
-                          <a href="#">
-                            <i className="fa-brands fa-twitter" />
-                          </a>
-                          <a href="#">
+                          <a href="https://www.instagram.com/mansihasan">
                             <i className="fa-brands fa-instagram" />
+                          </a>
+                          <a href="#">
+                            <i className="fa-brands fa-linkedin-in" />
+                          </a>
+                          <a href="https://wa.me/+919820155137">
+                            <i className="fa-brands fa-whatsapp" />
+                          </a>
+                          <a href="https://www.facebook.com/mansi.hasan">
+                            <i className="fa-brands fa-facebook-f" />
                           </a>
                         </div>
                       </div>

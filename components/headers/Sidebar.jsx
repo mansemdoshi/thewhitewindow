@@ -80,16 +80,16 @@ export default function Sidebar() {
             <div className="social-wrapper mt--20">
               <span className="subtitle">find me on social media</span>
               <div className="social-link">
-                <a href="#">
+                <a href="https://www.instagram.com/mansihasan">
                   <i className="fa-brands fa-instagram" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
                   <i className="fa-brands fa-linkedin-in" />
                 </a>
-                <a href="#">
-                  <i className="fa-brands fa-twitter" />
+                <a href="https://wa.me/+919820155137">
+                  <i className="fa-brands fa-whatsapp" />
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/mansi.hasan">
                   <i className="fa-brands fa-facebook-f" />
                 </a>
               </div>

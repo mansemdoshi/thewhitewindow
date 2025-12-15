@@ -19,7 +19,7 @@ export default function page() {
     <>
       <div className="tmp-white-version">
         <Header />
-        <br/><br/><br/><br/>
+        <br/><br/>
         <Services isLight />
         {/* <Pricing parentClass="our-price-plan-area tmp-section-gapBottom" /> */}
         <Footer />
