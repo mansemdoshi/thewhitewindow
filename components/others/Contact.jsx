@@ -78,7 +78,7 @@ export default function Contact() {
                   <i className="fa-solid fa-phone" />
                 </div>
                 <h3 className="title">Phone</h3>
-                <p className="para">+1 (778) 386-76XX</p>
+                <p className="para">+91 98201 55137</p>
               </div>
             </div>
           </div>

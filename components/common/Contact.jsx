@@ -84,7 +84,7 @@ export default function Contact({
                     </span>
                     <div className="ft-link-wrap">
                       <h4 className="link-title">Contact:</h4>
-                      <a href="#">+1 (778) 386-76XX</a>
+                      <a href="#">+91 98201 55137</a>
                     </div>
                   </li>
                 </ul>
