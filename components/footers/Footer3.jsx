@@ -92,7 +92,7 @@ export default function Footer3({
                       <span className="ft-icon">
                         <i className="fa-solid fa-phone" />
                       </span>
-                      <a href="#">+1 (778) 368-76XX</a>
+                      <a href="#">+91 98201 55137</a>
                     </li>
                   </ul>
                   <div className="social-link footer">
