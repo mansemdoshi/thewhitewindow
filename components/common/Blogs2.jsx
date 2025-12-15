@@ -4,19 +4,18 @@ import { blogData3 } from "@/data/blogs";
 
 import Link from "next/link";
 export default function Blogs2({
-  parentClass = "blog-and-news-are tmp-section-gap",
+  parentClass = "blog-and-news-area tmp-section-gapTop",
   isLight = false,
 }) {
   return (
     <section className={parentClass} id="blog">
       <div className="container">
         <div className="section-head mb--50">
-          <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-            <span className="subtitle">Latest Blog</span>
-          </div>
+          {/* <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+            <span className="subtitle">Media & Highlights</span>
+          </div> */}
           <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-            Transforming Ideas into Exceptional <br />
-            the man can Creations
+            Insights & Resources
           </h2>
         </div>
         <div className="row">
@@ -28,7 +27,7 @@ export default function Blogs2({
                 <div className="blog-card-img">
                   <div className="img-box">
                     <Link
-                      href={`/blog-details${isLight ? "-white" : ""}/${
+                      href={`/blog-details-white/${
                         blog.slug
                       }`}
                     >
@@ -52,17 +51,11 @@ export default function Blogs2({
                           {blog.author}
                         </a>
                       </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa-regular fa-comments" />
-                          {blog.comments}
-                        </a>
-                      </li>
                     </ul>
                   </div>
                   <h3 className="blog-title">
                     <Link
-                      href={`/blog-details${isLight ? "-white" : ""}/${
+                      href={`/blog-details-white/${
                         blog.slug
                       }`}
                     >
@@ -72,7 +65,7 @@ export default function Blogs2({
                   <div className="read-more-btn">
                     <Link
                       className="tmp-btn hover-icon-reverse radius-round btn-border btn-md"
-                      href={`/blog-details${isLight ? "-white" : ""}/${
+                      href={`/blog-details-white/${
                         blog.slug
                       }`}
                     >

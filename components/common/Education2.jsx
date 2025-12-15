@@ -3,7 +3,7 @@ import Image from "next/image";
 import { educationExperienceData } from "@/data/education";
 export default function Education() {
   return (
-    <section className="education-experience tmp-section-gapTop" id="resume">
+    <section className="education-experience" id="resume">
       <div className="container">
         <h2 className="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">
           Education
@@ -28,7 +28,7 @@ export default function Education() {
               </div>
             </div>
           ))}
-        </div>
+        </div><br/><br/>
         <div className="experiences-wrapper">
           <div className="row">
             <div className="col-lg-6">

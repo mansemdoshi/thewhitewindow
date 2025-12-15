@@ -68,7 +68,7 @@ export default function Hero() {
               <div className="thumbnail-right-inner-main-image tmponhover">
                 <Image
                   alt=""
-                  src="/assets/images/banner/instructor.png"
+                  src="/assets/images/banner/manse-with-rocky.jpeg"
                   width={700}
                   height={933}
                 />

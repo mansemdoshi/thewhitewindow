@@ -8,16 +8,16 @@ export default function Testimonials() {
   return (
     <section className="clients-testimonial-area tmp-section-gapTop">
       <div className="section-head mb--50">
-        <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-          <span className="subtitle">Clients Testimonial</span>
-        </div>
+        {/* <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+          <span className="subtitle">Clients Testimonials</span>
+        </div> */}
         <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-          Bringing Dreams to Life through
+          Client Testimonials
         </h2>
         <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
-          Business consulting consultants provide expert advice and guida
-          businesses to <br />
-          help them improve their performance, efficiency, and organizational
+          Choosing a counselor is a deeply personal decision, and hearing from others can help you feel more confident about taking the next step. Here, you’ll find real stories and reflections from clients who have experienced the care, support, and guidance I provide.
+          <br/><br/>Their words highlight the impact of counseling from finding clarity during difficult times to building resilience and discovering new ways forward. I'm honored to walk alongside each person on their journey, and grateful for the trust they place in me.
+
         </p>
       </div>
       <div className="client-testimonial-swiper position-relative">
@@ -65,7 +65,7 @@ export default function Testimonials() {
                     </div>
                     <div className="client-details">
                       <h3 className="client-title">{testimonial.name}</h3>
-                      <p className="client-para">{testimonial.role}</p>
+                      {/* <p className="client-para">{testimonial.role}</p> */}
                     </div>
                   </div>
                   <div className="tmp-star">
@@ -77,16 +77,8 @@ export default function Testimonials() {
                       ))}
                     </ul>
                   </div>
-                </div>
-                <p className="client-para">{testimonial.text}</p>
-                <div className="quat-logo">
-                  <Image
-                    alt="quat-logo"
-                    src="/assets/images/testimonial/quat-logo.svg"
-                    width={47}
-                    height={40}
-                  />
-                </div>
+                </div><br/>
+                <p className="description">{testimonial.text}</p>
               </div>
             </SwiperSlide>
           ))}

@@ -23,7 +23,7 @@ export default function page() {
         <br/><br/>
         <Hero />
         <Education />
-        <Skills parentClass="tmp-skill-area tmp-section-gapTop tmp-section-gapBottom" />
+        <Skills parentClass="tmp-skill-area tmp-section-gapTop" />
         <Facts />
         <Contact parentClass="get-in-touch-area tmp-section-gapBottom tmp-section-gapTop" />
         <Footer /> 

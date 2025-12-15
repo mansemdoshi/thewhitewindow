@@ -7,10 +7,10 @@ import { tags } from "@/data/blogs";
 import { slugify } from "@/utlis/slugify";
 export default function BlogDetails({ blog, isLight = false }) {
   return (
-    <div className="blog-classic-area-wrapper tmp-section-gap">
+    <div className="blog-classic-area-wrapper">
       <div className="container">
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-12">
             <div className="blog-details-left-area">
               <div className="thumbnail-top">
                 <Image
@@ -22,38 +22,55 @@ export default function BlogDetails({ blog, isLight = false }) {
               </div>
               <div className="blog-details-discription">
                 <div className="blog-classic-tag">
-                  <h4 className="title">By Stanio lainto</h4>
+                  <h4 className="title">By {blog.author}</h4>
                   <ul>
                     <li>
                       <div className="tag-wrap">
                         <i className="fa-solid fa-tag" />
-                        <h4 className="tag-title">Web design</h4>
+                        <h4 className="tag-title">{blog.tags[0]}</h4>
                       </div>
                     </li>
-                    <li>
+                    {/* <li>
                       <div className="tag-wrap">
                         <i className="fa-solid fa-calendar-day" />
                         <h4 className="tag-title">Comments (05)</h4>
                       </div>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
                 <h3 className="title split-collab">{blog.title}</h3>
                 <p className="disc">
-                  Aliquam eros justo, posuere loborti viverra laoreet matti
-                  ullamcorper posuere viverra .Aliquam eros justo, posuere
-                  lobortis, viverra laoreet augue mattis fermentum ullamcorper
-                  viverra laoreet Aliquam
+                  {blog.para1}
                 </p>
                 <p className="disc">
-                  Aliquam eros justo, posuere loborti viverra laoreet matti
-                  ullamcorper posuere viverra .Aliquam eros justoposuere
-                  lobortis non, viverra laoreet augue mattis fermentum
-                  ullamcorper viverra laore Aliquam eros justo posuere desig
-                  loborti viverra laoreet matti ullamcorper posuere viverra
+                  {blog.para2}
+                </p>
+                <p className="disc">
+                  {blog.para3}
+                </p>
+                <p className="disc">
+                  {blog.para4}
+                </p>
+                <p className="disc">
+                  {blog.para5}
+                </p>
+                <p className="disc">
+                  {blog.para6}
+                </p>
+                <p className="disc">
+                  {blog.para7}
+                </p>
+                <p className="disc">
+                  {blog.para8}
+                </p>
+                <p className="disc">
+                  {blog.para9}
+                </p>
+                <p className="disc">
+                  {blog.para10}
                 </p>
               </div>
-              <div className="quote-area-blog-details">
+              {/* <div className="quote-area-blog-details">
                 <p className="disc">
                   Aliquam eros justo, posuere loborti viverra laoreet matti
                   ullamcorper posuere viverra .Aliquam eros justo, posuere
@@ -64,8 +81,8 @@ export default function BlogDetails({ blog, isLight = false }) {
                 <span>
                   <i className="fa-solid fa-quote-right" />
                 </span>
-              </div>
-              <div className="blog-details-discription">
+              </div> */}
+              {/* <div className="blog-details-discription">
                 <h3 className="title split-collab">
                   Showcase your talent with our portfolio
                 </h3>
@@ -107,8 +124,8 @@ export default function BlogDetails({ blog, isLight = false }) {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="blog-details-navigation">
+                </div> */}
+                {/* <div className="blog-details-navigation">
                   <div className="navigation-tags">
                     <h3 className="tag-title">Keyword:</h3>
                     <ul>
@@ -141,9 +158,9 @@ export default function BlogDetails({ blog, isLight = false }) {
                       <i className="fa-brands fa-facebook-f" />
                     </a>
                   </div>
-                </div>
+                </div> */}
                 {/* Comment Area Main Wrapper Start */}
-                <div className="comment-area-main-wrapper mt--30">
+                {/* <div className="comment-area-main-wrapper mt--30">
                   <h3 className="title">Comments (3)</h3>
                   <div className="single-comment-audience">
                     <div className="author-image tmponhover">
@@ -267,17 +284,17 @@ export default function BlogDetails({ blog, isLight = false }) {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* Comment Area Main Wrapper End */}
                 {/* Blog Details Form Wrapper Start */}
-                <Comment />
+                {/* <Comment /> */}
                 {/* Blog Details Form Wrapper End */}
-              </div>
+              {/* </div> */}
             </div>
           </div>
-          <div className="col-lg-4">
+          {/* <div className="col-lg-4">
             <BlogSidebar isLight={isLight} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

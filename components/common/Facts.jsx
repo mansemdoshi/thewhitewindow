@@ -5,7 +5,7 @@ import { counters } from "@/data/facts";
 export default function Facts() {
   return (
     <section className="counter-area">
-      <div className="container">
+      <div className="container tmp-section-gapTop">
         <div className="row g-5">
           <div className="col-12 col-lg-6 col-xl-6 col-xxl-6">
             <div className="year-of-expariance-wrapper bg-blur-style-one tmp-scroll-trigger tmp-fade-in animation-order-1">

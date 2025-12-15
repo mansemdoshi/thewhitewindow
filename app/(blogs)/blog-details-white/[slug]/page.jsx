@@ -18,28 +18,12 @@ export default async function page({ params }) {
   return (
     <>
       <div className="tmp-white-version">
-        <Header1 />
-        <div className="breadcrumb-area breadcrumb-bg">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="breadcrumb-inner text-center">
-                  <h1 className="title split-collab">{blog.title}</h1>
-                  <ul className="page-list">
-                    <li className="tmp-breadcrumb-item">
-                      <Link href={`/`}>Home</Link>
-                    </li>
-                    <li className="icon">
-                      <i className="fa-solid fa-angle-right" />
-                    </li>
-                    <li className="tmp-breadcrumb-item active">Blog Details</li>
-                  </ul>
-                  {/* <div class="circle-1"></div> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Header1 /><br/><br/>
+        <div className="section-head">
+            <h2 className="tmp-section-gapTop title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
+              {blog.title}
+            </h2>
+        </div><br/>
         <BlogDetails isLight blog={blog} />
         <Footer3 />
         <Copyright /> <CommonComponents />
