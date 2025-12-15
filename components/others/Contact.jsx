@@ -58,7 +58,7 @@ export default function Contact() {
                   <i className="fa-solid fa-location-dot" />
                 </div>
                 <h3 className="title">Address</h3>
-                <p className="para">Hoskins Rd, North Vancouver, BC V7K 2P4, Canada</p>
+                <p className="para">North Vancouver, BC, Canada</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">

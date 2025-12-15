@@ -71,7 +71,7 @@ export default function Sidebar() {
                 <i className="fa-solid fa-location-crosshairs" />
                 <div className="information tmp-link-animation">
                   <span>Address</span>
-                  <span className="number">Hoskins Rd, North Vancouver, BC V7K 2P4, Canada</span>
+                  <span className="number">North Vancouver, BC, Canada</span>
                 </div>
               </div>
               {/* single contact information end */}

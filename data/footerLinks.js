@@ -9,6 +9,6 @@ export const footerLinksWhite = [
   { href: "/", label: "Home" },
   { href: "/about-white", label: "About Me" },
   { href: "/service-white", label: "Services" },
-  { href: "/contact-white", label: "Contact" },
   { href: "/faq-white", label: "FAQs" },
+  { href: "/contact-white", label: "Contact" },
 ];

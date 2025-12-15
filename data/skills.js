@@ -69,10 +69,34 @@ export const skillSections = [
   {
     title: "Skills",
     skills: [
-      { name: "Clinical Psychologist & Psychotherapy", percent: 100, duration: "0.5s", delay: ".3s" },
-      { name: "Cognitive Behavioural Therapy (CBT)", percent: 100, duration: "0.5s", delay: ".4s" },
-      { name: "Relationship Counselling XD", percent: 100, duration: "0.5s", delay: ".5s" },
-      { name: "Child & Adolescent well-being", percent: 100, duration: "0.5s", delay: ".5s" },
+      { 
+        name: "Clinical Psychologist & Psychotherapy", 
+        description: "Providing evidence-based therapy to address emotional and mental health challenges.",
+        percent: 100, 
+        duration: "0.5s", 
+        delay: ".3s" 
+      },
+      { 
+        name: "Cognitive Behavioural Therapy (CBT)", 
+        description: "A structured therapy that helps identify and change unhelpful thoughts and behaviours for healthier coping.",
+        percent: 100, 
+        duration: "0.5s", 
+        delay: ".4s" 
+      },
+      { 
+        name: "Relationship Counselling", 
+        description: "Supporting people in improving communication, resolving conflicts and rebuild connections.",
+        percent: 100, 
+        duration: "0.5s", 
+        delay: ".5s" 
+      },
+      { 
+        name: "Child & Adolescent Well-Being", 
+        description: "Promoting emotional and developmental health in young people through tailored, age appropriate therapy.",
+        percent: 100, 
+        duration: "0.5s", 
+        delay: ".5s" 
+      },
     ],
   },
 ];

@@ -1,16 +1,14 @@
+import Contact from "@/components/common/Contact2";
 import Copyright from "@/components/footers/Copyright";
-
+import Hero from "@/components/common/FAQs";
 import Footer from "@/components/footers/Footer1";
-
 import Header from "@/components/headers/Header1";
-import Pricing from "@/components/common/Pricing";
-import Services from "@/components/services/Services";
 import Link from "next/link";
 import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
   title:
-    "Services || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+    "FAQs || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
   description:
     "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };
@@ -19,11 +17,11 @@ export default function page() {
     <>
       <div className="tmp-white-version">
         <Header />
-        <br/><br/><br/><br/>
-        <Services isLight />
-        {/* <Pricing parentClass="our-price-plan-area tmp-section-gapBottom" /> */}
-        <Footer />
-        <Copyright /> 
+        <br/><br/>
+        <Hero />
+        <Contact parentClass="get-in-touch-area tmp-section-gapBottom" />
+        <Footer /> 
+        <Copyright />
         <CommonComponents />
       </div>
     </>

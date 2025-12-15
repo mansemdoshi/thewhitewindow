@@ -233,19 +233,88 @@ export const services4 = [
 
 export const serviceCards = [
   {
-    title: "A Portfolio of Creativity",
+    id: 1,
+    column: 1,
+    title: "What does a clinical psychologist do?",
     description:
-      "Business consulting consultants provide expert advice and guida the a businesses to help theme their performance efficiency",
+      "A clinical psychologist in India helps diagnose and treat the mental health problems which are associated with anxiety, depression, trauma, OCD, and relationship issues. The primary modes of assessment are psychotherapy and psychological assessments.",  
   },
   {
-    title: "My Portfolio of Innovation",
+    id: 2,
+    column: 1,
+    title: "Is psychotherapy effective for anxiety, depression, or relationship problems?",
     description:
-      "My work is driven by the belief that thoughtful design and strategic planning can empower brands, transform businesses",
+      "Therapy for depression, anxiety, and relationship issues has shown excellent results worldwide. In India, clinical psychologists have proven techniques like cognitive behavioural therapy, mindfulness, and interpersonal therapy to promote long-term well-being among people.",
   },
   {
-    title: "A Showcase of My Projects",
+    id: 3,
+    column: 1,
+    title: "How do I know if I need therapy or medication?",
     description:
-      "In this portfolio, you’ll find a curated selection of projects that highlight my skills in [Main Areas, e.g., responsive web design",
+      "If you experience persistent sadness, anxiety, stress, sleep issues, or emotional overwhelms, you can start with a consultation with a clinical psychologist. If required, your therapist will then refer you to a psychiatrist for medication.",
+  },
+  {
+    id: 4,
+    column: 1,
+    title: "How do I prepare for my first therapy session?",
+    description:
+      "Write down your symptoms, concerns, and goals beforehand, and we will open up to your psychologist. They are there to help, not to judge. You do not need to prepare anything in general before coming to a therapy session for the first time.",  
+  },
+  {
+    id: 5,
+    column: 2,
+    title: "Can therapy help with family stress, marriage issues, or cultural conflicts?",
+    description:
+      "It helps you manage your expectations, communication gaps, and even the cultural pressures that are common in Indian households and relationships.",
+  },
+  {
+    id: 6,
+    column: 1,
+    title: "Is it normal to see a psychologist?",
+    description:
+      "Yes, it is completely normal to seek help. Mental health awareness in India is growing, and more people are visiting psychologists and therapists to live a happier and healthier life.",
+  },
+  {
+    id: 7,
+    column: 2,
+    title: "How long does therapy take to show results?",
+    description:
+      "Every person is unique, where the clients may notice positive changes after at least 6 therapy sessions. It requires a maximum of 4 to 6 therapy sessions. This depends on the type of issue, therapy goals, and your commitment to the process.",  
+  },
+  {
+    id: 8,
+    column: 1,
+    title: "Is everything I share in therapy kept confidential?",
+    description:
+      "Absolutely all the therapy sessions are 100% confidential. Details and discussions are not shared without your consent, except where a legality is required for safety reasons.",
+  },
+  {
+    id: 9,
+    column: 2,
+    title: "What are your consultation fees and payment options?",
+    description:
+      "Consultation fees depend upon the therapist's experience and session duration. I accept credit card payments via Stripe globally and also accept payments via GPay, UPI, bank transfers in India.",
+  },
+  {
+    id: 10,
+    column: 1,
+    title: "Do you offer online sessions?",
+    description:
+      "Yes, I offer secure video sessions for clients who prefer remote care. Book your first session online and choose a time that suits you.",  
+  },
+  {
+    id: 11,
+    column: 2,
+    title: "Do you work with children and teenagers?",
+    description:
+      "Yes. I work extensively with children and adolescents struggling with behavioural, emotional, or academic difficulties. I use play-based and expressive methods to help younger clients process their emotions safely and effectively.",
+  },
+  {
+    id: 12,
+    column: 1,
+    title: "What does a typical therapy session look like?",
+    description:
+      "Sessions are conversational and collaborative. I identify current challenges, explore thought and behaviour patterns, and develop practical strategies for change. For children, sessions often involve structured play, art, or storytelling.",
   },
 ];
 
@@ -292,43 +361,64 @@ export const serviceCards3 = [
     iconClass: "fa-regular fa-person",
     title: "Individual Pyshotherapy",
     description:
-      "Individual therapy provides a safe and confidential space for you to explore your thoughts, feelings, and behaviors with the guidance of a trained therapist.",
-    animationOrder: 4,
+      "A confidential space to explore emotions, patterns, and challenges. Sessions are customised to help you build emotional resilience and gain a deeper understanding of yourself.",
+    animationOrder: 1,
   },
   {
     iconClass: "fa-light fa-brain",
     title: "Psychological Assessments",
     description:
-      "Psychological assessments are tools used by mental health professionals to evaluate and understand an individual's cognitive, emotional, and behavioral functioning.",
-    animationOrder: 5,
+      "Structured assessments that provide clarity on emotional, behavioural, or learning concerns. These insights guide effective treatment and self-awareness.",
+    animationOrder: 2,
   },
   {
     iconClass: "fa-light fa-spa",
     title: "Cognitive Behavioral Therapy",
     description:
-      "Cognitive Behavioral Therapy (CBT) is a goal-oriented and evidence-based approach that helps individuals identify and change negative thought patterns and behaviors.",
-    animationOrder: 4,
+      "A practical approach that helps identify and challenge unhelpful thoughts, improving emotional regulation and resilience.",
+    animationOrder: 3,
   },
   {
     iconClass: "fa-regular fa-handshake",
     title: "Acceptance and Commitment Therapy",
     description:
-      "Acceptance and Commitment Therapy (ACT) is a mindfulness-based therapeutic approach that encourages individuals to accept their thoughts and feelings rather than fighting or feeling guilty for them.",
-    animationOrder: 5,
+      "A compassionate, mindfulness-based therapy that encourages acceptance, presence, and values-driven living.",
+    animationOrder: 4,
   },
   {
     iconClass: "fa-regular fa-dove",
     title: "Trauma-Informed Therapy",
     description:
-      "Trauma-informed therapy is an approach that recognizes the widespread impact of trauma and seeks to create a safe and supportive environment for healing.",
+      "Every session prioritises safety, empathy, and pacing, helping you heal from trauma and reclaim emotional strength.",
     animationOrder: 5,
   },
   {
     iconClass: "fa-regular fa-heart",
     title: "Grief & Loss Counseling",
     description:
-      "Grief and loss counseling provides support and guidance to individuals coping with the emotional challenges associated with losing a loved one or experiencing significant life changes.",
-    animationOrder: 5,
+      "A safe environment to process grief and rediscover balance after loss and help you acknowledge emotions, navigate change, and slowly rebuild meaning and peace.",
+    animationOrder: 6,
+  },
+  {
+    iconClass: "fa-regular fa-baby",
+    title: "CBT for Children & Adolescents",
+    description:
+      "Age-appropriate cognitive behavioural strategies that help young people manage anxiety, worry, behavioural challenges, and low mood. Therapy includes play-based techniques, parent coaching, and clear home-based tasks to support progress between sessions.",
+    animationOrder: 7,
+  },
+  {
+    iconClass: "fa-regular fa-restroom",
+    title: "Parental Guidance & Support",
+    description:
+      "A supportive space where parents learn practical strategies and emotional tools for everyday parenting challenges. From toddler routines to adolescent conflict, sessions combine evidence-based techniques and guidance so families can function with more ease and confidence.",
+    animationOrder: 8,
+  },
+  {
+    iconClass: "fa-regular fa-ring",
+    title: "Premarital Counselling",
+    description:
+      "A practical, evidence-based space to prepare for marriage covering opics like communication, expectations, conflict strategies, family boundaries, and emotional readiness.",
+    animationOrder: 9,
   },
 ];
 export const allServices = [

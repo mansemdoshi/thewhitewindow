@@ -9,7 +9,7 @@ export default function Skills({
       <div className="container">
         <div className="row g-5">
           {skillSections.map((section, sectionIndex) => (
-            <div className="col-lg-6" key={sectionIndex}>
+            <div className="" key={sectionIndex}>
               <div className="progress-wrapper">
                 <div className="content">
                   <h2 className="custom-title mb--30 tmp-scroll-trigger tmp-fade-in animation-order-1">
@@ -26,7 +26,8 @@ export default function Skills({
                   {section.skills.map((skill, skillIndex) => (
                     <div className="progress-charts" key={skillIndex}>
                       <h6 className="heading heading-h6">{skill.name}</h6>
-                      <div className="progress">
+                      <div className="subtitle">{skill.description}</div>
+                      {/* <div className="progress">
                         <div
                           className="progress-bar wow fadeInLeft"
                           data-wow-duration={skill.duration}
@@ -34,7 +35,7 @@ export default function Skills({
                           role="progressbar"
                           style={{
                             width: `${skill.percent}%`,
-                            visibility: "visible",
+                            visibility: "hidden",
                             animationDuration: skill.duration,
                             animationDelay: skill.delay,
                             animationName: "fadeInLeft",
@@ -47,7 +48,7 @@ export default function Skills({
                             {skill.percent}%
                           </span>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   ))}
                 </div>

@@ -1,15 +1,15 @@
 export const menuItems = [
   { label: "Home", href: "/", isLink: false },
   { label: "About Me", href: "/about-white", isLink: true },
-  {
-    label: "Services", href: "/service-white", isLink: true },
+  { label: "Services", href: "/service-white", isLink: true },
+  { label: "FAQs", href: "/faq-white", isLink: true },
   { label: "Contact", href: "/contact-white", isLink: true },
 ];
 export const menuItemsLight = [
   { label: "Home", href: "/", isLink: false },
   { label: "About Me", href: "/about-white", isLink: true },
-  {
-    label: "Services", href: "/service-white", isLink: true },
+  { label: "Services", href: "/service-white", isLink: true },
+  { label: "FAQs", href: "/faq-white", isLink: true },
   { label: "Contact", href: "/contact-white", isLink: true },
 ];
 export const demoData = [

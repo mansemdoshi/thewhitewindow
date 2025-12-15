@@ -57,7 +57,7 @@ export default function Contact({
             <div className="col-lg-5">
               <div className="contact-inner">
                 <div className="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
-                  <span className="title-left">Get Ready To Create Great</span>
+                  <span className="title-left">Opening a Window to Healing and Hope</span>
                 </div>
                 <ul className="ft-link v2">
                   <li className="tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-link-animation">
@@ -66,7 +66,7 @@ export default function Contact({
                     </span>
                     <div className="ft-link-wrap">
                       <h4 className="link-title">E-mail:</h4>
-                      <a href="#">nafiz125@gmail.com</a>
+                      <a href="#">info@thewhitewindow.com</a>
                     </div>
                   </li>
                   <li className="tmp-scroll-trigger tmp-fade-in animation-order-2">
@@ -75,7 +75,7 @@ export default function Contact({
                     </span>
                     <div className="ft-link-wrap">
                       <h4 className="link-title">Location:</h4>
-                      <div>3891 Ranchview Dr. Richardson</div>
+                      <div>North Vancouver, BC, Canada</div>
                     </div>
                   </li>
                   <li className="tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
@@ -84,7 +84,7 @@ export default function Contact({
                     </span>
                     <div className="ft-link-wrap">
                       <h4 className="link-title">Contact:</h4>
-                      <a href="#">01245789321</a>
+                      <a href="#">+1 (778) 386-76XX</a>
                     </div>
                   </li>
                 </ul>

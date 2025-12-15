@@ -40,7 +40,7 @@ export default function Footer3({
                     </Link>
                   </div>
                   <p className="description">
-                    <span>Get Ready</span> To <br /> Create Great
+                    <span>Opening a Window </span> to <br /> to Healing and Hope
                   </p>
                   <form
                     onSubmit={(e) => e.preventDefault()}
@@ -80,19 +80,19 @@ export default function Footer3({
                       <span className="ft-icon">
                         <i className="fa-solid fa-envelope" />
                       </span>
-                      <a href="#">nafiz125@gmail.com</a>
+                      <a href="#">info@thewhitewindow.com</a>
                     </li>
                     <li>
                       <span className="ft-icon">
                         <i className="fa-solid fa-location-dot" />
                       </span>
-                      3891 Ranchview Dr. Richardson
+                      North Vancouver, BC, Canada
                     </li>
                     <li>
                       <span className="ft-icon">
                         <i className="fa-solid fa-phone" />
                       </span>
-                      <a href="#">01245789321</a>
+                      <a href="#">+1 (778) 368-76XX</a>
                     </li>
                   </ul>
                   <div className="social-link footer">
