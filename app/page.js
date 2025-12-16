@@ -10,6 +10,7 @@ import Portfolio from "@/components/common/Portfolio2";
 import Services from "@/components/common/Services5";
 import Skills from "@/components/common/Skills";
 import Testimonials from "@/components/common/Testimonials";
+import Highlights from "@/components/common/Highlights";
 import Footer from "@/components/footers/Footer1";
 import CommonComponents from "@/components/common/CommonComponents";
 
@@ -26,6 +27,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Blogs />
+        <Highlights />
         {/* <Services isLight/> */}
         {/* <Skills /> */}
         {/* <Services /> */}
@@ -33,7 +35,7 @@ export default function Home() {
         {/* <Brands /> */}
         {/* <Portfolio /> */}
         {/* <Skills /> */}
-        <Facts />
+        {/* <Facts /> */}
         <Testimonials />
         <Contact />
         {/* <Blogs /> */}

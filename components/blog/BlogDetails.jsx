@@ -39,39 +39,12 @@ export default function BlogDetails({ blog, isLight = false }) {
                   </ul>
                 </div>
                 <h3 className="title split-collab">{blog.title}</h3>
-                <p className="disc">
-                  {blog.para1}
-                </p>
-                <p className="disc">
-                  {blog.para2}
-                </p>
-                <p className="disc">
-                  {blog.para3}
-                </p>
-                <p className="disc">
-                  {blog.para4}
-                </p>
-                <p className="disc">
-                  {blog.para5}
-                </p>
-                <p className="disc">
-                  {blog.para6}
-                </p>
-                <p className="disc">
-                  {blog.para7}
-                </p>
-                <p className="disc">
-                  {blog.para8}
-                </p>
-                <p className="disc">
-                  {blog.para9}
-                </p>
-                <p className="disc">
-                  {blog.para10}
+                <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
+                  {blog.description}
                 </p>
               </div>
               {/* <div className="quote-area-blog-details">
-                <p className="disc">
+                <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
                   Aliquam eros justo, posuere loborti viverra laoreet matti
                   ullamcorper posuere viverra .Aliquam eros justo, posuere
                   lobortis, viverra laoreet augue mattis fermentum ullamcorper
@@ -86,7 +59,7 @@ export default function BlogDetails({ blog, isLight = false }) {
                 <h3 className="title split-collab">
                   Showcase your talent with our portfolio
                 </h3>
-                <p className="disc">
+                <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
                   Aliquam eros justo, posuere loborti viverra laoreet matti
                   ullamcorper posuere viverra .Aliquam eros justo, posuere
                   lobortis, viverra laoreet augue mattis fermentum ullamcorper
@@ -96,19 +69,19 @@ export default function BlogDetails({ blog, isLight = false }) {
                   <div className="blog-details-swiper">
                     <div className="our-portfoli-swiper-card">
                       <div className="card-left-content">
-                        <p className="disc">
+                        <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
                           Ished fact that a reader will be distrol acted bioii
                           the.ished fact th reader will besi distrol ac laoreet
                           Aliquam fact that a reader will be distrol acted
                           Aliquam posuere loborti viverra laoreet
                         </p>
-                        <p className="disc">
+                        <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
                           Aliquam eros justo, posuere loborti viverra laoreet
                           matt design the ullamcorper posuere viverra .Aliquam
                           eros justo posuere inni lobortis non, viverra laoreet
                           augue mattis
                         </p>
-                        <p className="disc">
+                        <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
                           Aliquam eros justo, posuere loborti viverra laoreet
                           matti design an the ullamcorper posuere viverra
                           .Aliquam eros
@@ -192,7 +165,7 @@ export default function BlogDetails({ blog, isLight = false }) {
                           </a>
                         </div>
                       </div>
-                      <p className="disc">
+                      <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
                         Ished fact that a reader will be distrol acted bioii
                         the.ished fact that a reader will be distrol acted
                         laoreet Aliquam fact that a reader will be distrol acted
@@ -233,7 +206,7 @@ export default function BlogDetails({ blog, isLight = false }) {
                           </a>
                         </div>
                       </div>
-                      <p className="disc">
+                      <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
                         Ished fact that a reader will be distrol acted bioii
                         the.ished fact that a reader will be distrol acted
                         laoreet.
@@ -273,7 +246,7 @@ export default function BlogDetails({ blog, isLight = false }) {
                           </a>
                         </div>
                       </div>
-                      <p className="disc">
+                      <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
                         Ished fact that a reader will be distrol acted bioii
                         the.ished fact that a reader will be distrol acted
                         laoreet Aliquam fact that a reader will be distrol acted

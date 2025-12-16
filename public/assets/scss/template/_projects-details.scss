@@ -80,15 +80,18 @@
         .project-details-img{
             img{
                 border-radius: 20px;
-                width: 100%;
+                margin-right: 16%;
+                margin-left: 16%;
+                width: 68%;
                 object-fit: cover;
-            
             }
         }
     }
 
     .project-details-swiper-btn {
         margin-top: 50px;
+        margin-left: 16%;
+        margin-right: 16%;
         display: flex;
         justify-content: space-between;
 

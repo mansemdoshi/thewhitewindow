@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 export default function Testimonials() {
   return (
-    <section className="clients-testimonial-area tmp-section-gapTop">
+    <section className="clients-testimonial-area">
       <div className="section-head mb--50">
         {/* <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
           <span className="subtitle">Clients Testimonials</span>

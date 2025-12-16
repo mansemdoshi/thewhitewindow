@@ -19,13 +19,12 @@ export default function page() {
   return (
     <>
       <div className="tmp-white-version">
-        <Header />
-        <br/><br/>
-        <Hero />
+        <Header /><br/><br/>
+        <Hero parentClass="tmp-skill-area tmp-section-gapTop" />
         <Education />
-        <Skills parentClass="tmp-skill-area tmp-section-gapTop" />
-        <Facts />
-        <Contact parentClass="get-in-touch-area tmp-section-gapBottom tmp-section-gapTop" />
+        <Skills parentClass="tmp-skill-area tmp-section-gapTop tmp-section-gapBottom" />
+        {/* <Facts /> */}
+        {/* <Contact parentClass="get-in-touch-area tmp-section-gapBottom tmp-section-gapTop" /> */}
         <Footer /> 
         <Copyright />
         <CommonComponents />
