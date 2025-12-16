@@ -21,9 +21,9 @@ export default function page() {
       <div className="tmp-white-version">
         <Header /><br/><br/>
         <Hero parentClass="tmp-skill-area tmp-section-gapTop" />
+        <Facts /><br/><br/><br/><br/>
         <Education />
         <Skills parentClass="tmp-skill-area tmp-section-gapTop tmp-section-gapBottom" />
-        {/* <Facts /> */}
         {/* <Contact parentClass="get-in-touch-area tmp-section-gapBottom tmp-section-gapTop" /> */}
         <Footer /> 
         <Copyright />

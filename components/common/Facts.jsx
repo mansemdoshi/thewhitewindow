@@ -12,7 +12,7 @@ export default function Facts() {
               <div className="year-expariance-wrap">
                 {/* <h2 class="year-number"><span class="counter">25 </span> </h2> */}
                 <h2 className="counter year-number">
-                  <OdometerComponent max={24} />
+                  {/* <OdometerComponent max={24} /> */}24
                 </h2>
                 <h3 className="year-title">
                   Years Of <br />

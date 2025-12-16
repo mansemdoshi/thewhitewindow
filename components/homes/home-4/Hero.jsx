@@ -59,7 +59,7 @@ export default function Hero() {
                 <div className="year-expariance-wrap">
                   {/* <h3 class="title "><span class="counter">25</span></h3> */}
                   <h3 className="counter title">
-                    <OdometerComponent max={24} />
+                    {/* <OdometerComponent max={24} /> */}24
                   </h3>
                   <p className="para">
                     Years Of <br />

@@ -12,7 +12,7 @@ export default function Highlights() {
           <span className="subtitle">Clients Testimonials</span>
         </div> */}
         <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-          Media & Feature Highlights
+          Highlights
         </h2>
         <p className="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">
           I am a practicing psychologist with extensive experience working at the intersection of mental health and mainstream media. Over the years, I have collaborated as a psychologist on some of India’s most well-known television shows,  in 2010-2014 including Kaun Banega Crorepati, Indian Idol, Hindustan Ke Hunarbaaz, Sach Ka Saamna, and Star Vivaah  and Entertainment ke kuch bhi Karega.<br/><br/>
