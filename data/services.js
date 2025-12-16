@@ -360,6 +360,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-regular fa-person",
     title: "Individual Pyshotherapy",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/9c3c28d6-94db-47ea-8832-124c22ef5eb3",
     description:
       "A confidential space to explore emotions, patterns, and challenges. Sessions are customised to help you build emotional resilience and gain a deeper understanding of yourself.",
     animationOrder: 1,
@@ -367,6 +368,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-light fa-brain",
     title: "Psychological Assessments",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/52892482-6d11-419b-9b34-2c02e3873dd7",
     description:
       "Structured assessments that provide clarity on emotional, behavioural, or learning concerns. These insights guide effective treatment and self-awareness.",
     animationOrder: 2,
@@ -374,6 +376,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-light fa-spa",
     title: "Cognitive Behavioral Therapy",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/6d24c680-a0e3-47c9-8e76-7f0ca82e05ab",
     description:
       "A practical approach that helps identify and challenge unhelpful thoughts, improving emotional regulation and resilience.",
     animationOrder: 3,
@@ -381,6 +384,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-regular fa-handshake",
     title: "Acceptance and Commitment Therapy",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/afaf709e-1e79-4f3f-b291-6605ee14204f",
     description:
       "A compassionate, mindfulness-based therapy that encourages acceptance, presence, and values-driven living.",
     animationOrder: 4,
@@ -388,6 +392,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-regular fa-dove",
     title: "Trauma-Informed Therapy",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/fb91e981-5d31-49e0-a71d-43fc238dd640",
     description:
       "Every session prioritises safety, empathy, and pacing, helping you heal from trauma and reclaim emotional strength.",
     animationOrder: 5,
@@ -395,6 +400,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-regular fa-heart",
     title: "Grief & Loss Counseling",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/5a44c3f5-3846-4fce-9d03-6d5a5a113906",
     description:
       "A safe environment to process grief and rediscover balance after loss and help you acknowledge emotions, navigate change, and slowly rebuild meaning and peace.",
     animationOrder: 6,
@@ -402,6 +408,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-regular fa-baby",
     title: "CBT for Children & Adolescents",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/39227317-e2b9-4ec3-968a-eeb5e62e09f0",
     description:
       "Age-appropriate cognitive behavioural strategies that help young people manage anxiety, worry, behavioural challenges, and low mood. Therapy includes play-based techniques, parent coaching, and clear home-based tasks to support progress between sessions.",
     animationOrder: 7,
@@ -409,6 +416,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-regular fa-restroom",
     title: "Parental Guidance & Support",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/9b79803b-64d5-4964-90f2-46eb62452497",
     description:
       "A supportive space where parents learn practical strategies and emotional tools for everyday parenting challenges. From toddler routines to adolescent conflict, sessions combine evidence-based techniques and guidance so families can function with more ease and confidence.",
     animationOrder: 8,
@@ -416,6 +424,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-regular fa-ring",
     title: "Premarital Counselling",
+    bookingUrl: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/43173574-3be2-431d-a092-32c343d94f40",
     description:
       "A practical, evidence-based space to prepare for marriage covering opics like communication, expectations, conflict strategies, family boundaries, and emotional readiness.",
     animationOrder: 9,

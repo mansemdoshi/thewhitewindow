@@ -66,6 +66,23 @@ export default function Services({ isLight = false }) {
                     <h3 className="card-title">{card.title}</h3>
                   </div>
                   <p className="card-para">{card.description}</p>
+                  
+                  <div className="button-area-banner-three tmp-scroll-trigger tmp-fade-in animation-order-4">
+                  <Link
+                    className="tmp-btn hover-icon-reverse radius-round"
+                    href={`${card.bookingUrl}`}
+                  >
+                    <span className="icon-reverse-wrapper">
+                      <span className="btn-text">Book Now</span>
+                      <span className="btn-icon">
+                        <i className="fa-sharp fa-regular fa-arrow-right" />
+                      </span>
+                      <span className="btn-icon">
+                        <i className="fa-sharp fa-regular fa-arrow-right" />
+                      </span>
+                    </span>
+                  </Link>
+                </div>
                 </div>
               </div>
             ))}

@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Highlights() {
   return (
     <section className="clients-testimonial-area tmp-section-gapTop">
-      <div className="section-head mb--50">
+      <div className="section-head">
         {/* <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
           <span className="subtitle">Clients Testimonials</span>
         </div> */}

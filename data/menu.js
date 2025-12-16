@@ -4,13 +4,45 @@ export const menuItems = [
   { label: "Services", href: "/service-white", isLink: true },
   { label: "FAQs", href: "/faq-white", isLink: true },
   { label: "Contact", href: "/contact-white", isLink: true },
+  {
+    label: "Book Now",
+    hasDropdown: true,
+    isLink: false,
+    submenu: [
+      { label: "Individual Psychotherapy", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/9c3c28d6-94db-47ea-8832-124c22ef5eb3" },
+      { label: "Psychological Assessments", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/52892482-6d11-419b-9b34-2c02e3873dd7" },
+      { label: "Cognitive Behavioral Therapy", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/6d24c680-a0e3-47c9-8e76-7f0ca82e05ab" },
+      { label: "Acceptance and Commitment Therapy", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/afaf709e-1e79-4f3f-b291-6605ee14204f" },
+      { label: "Trauma-Informed Therapy", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/fb91e981-5d31-49e0-a71d-43fc238dd640" },
+      { label: "Grief & Loss Counseling", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/5a44c3f5-3846-4fce-9d03-6d5a5a113906" },
+      { label: "CBT for Children & Adolescents", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/39227317-e2b9-4ec3-968a-eeb5e62e09f0" },
+      { label: "Parental Guidance & Support", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/9b79803b-64d5-4964-90f2-46eb62452497" },
+      { label: "Premarital Counselling", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/43173574-3be2-431d-a092-32c343d94f40" },
+    ] 
+  },
 ];
 export const menuItemsLight = [
-  { label: "Home", href: "/", isLink: false },
+  { label: "Home", href: "/", isLink: true },
   { label: "About Me", href: "/about-white", isLink: true },
   { label: "Services", href: "/service-white", isLink: true },
   { label: "FAQs", href: "/faq-white", isLink: true },
   { label: "Contact", href: "/contact-white", isLink: true },
+  {
+    label: "Book Now",
+    hasDropdown: true,
+    isLink: false,
+    submenu: [
+      { label: "Individual Psychotherapy", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/9c3c28d6-94db-47ea-8832-124c22ef5eb3" },
+      { label: "Psychological Assessments", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/52892482-6d11-419b-9b34-2c02e3873dd7" },
+      { label: "Cognitive Behavioral Therapy", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/6d24c680-a0e3-47c9-8e76-7f0ca82e05ab" },
+      { label: "Acceptance and Commitment Therapy", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/afaf709e-1e79-4f3f-b291-6605ee14204f" },
+      { label: "Trauma-Informed Therapy", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/fb91e981-5d31-49e0-a71d-43fc238dd640" },
+      { label: "Grief & Loss Counseling", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/5a44c3f5-3846-4fce-9d03-6d5a5a113906" },
+      { label: "CBT for Children & Adolescents", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/39227317-e2b9-4ec3-968a-eeb5e62e09f0" },
+      { label: "Parental Guidance & Support", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/9b79803b-64d5-4964-90f2-46eb62452497" },
+      { label: "Premarital Counselling", href: "https://app.upheal.io/self-scheduling/c4fb6a4a-190d-447e-869a-37effdabd16d/43173574-3be2-431d-a092-32c343d94f40" },
+    ] 
+  },
 ];
 export const demoData = [
   { href: "/", img: "/assets/images/demo/home-1.png", title: "Main Demo" },

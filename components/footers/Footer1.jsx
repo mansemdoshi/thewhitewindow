@@ -80,7 +80,7 @@ export default function Footer1({
                       <span className="ft-icon">
                         <i className="fa-solid fa-envelope" />
                       </span>
-                      <a href="#">info@thewhitewindow.com</a>
+                      <a href="mailto:info@thewhitewindow.com">info@thewhitewindow.com</a>
                     </li>
                     <li>
                       <span className="ft-icon">

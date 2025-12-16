@@ -66,7 +66,7 @@ export default function Contact({
                     </span>
                     <div className="ft-link-wrap">
                       <h4 className="link-title">E-mail:</h4>
-                      <a href="#">info@thewhitewindow.com</a>
+                      <a href="mailto:info@thewhitewindow.com">info@thewhitewindow.com</a>
                     </div>
                   </li>
                   <li className="tmp-scroll-trigger tmp-fade-in animation-order-2">

@@ -60,7 +60,7 @@ export default function Sidebar() {
                 <i className="fa-solid fa-envelope" />
                 <div className="information tmp-link-animation">
                   <span>E-Mail</span>
-                  <a href="#" className="number">
+                  <a href="mailto:info@thewhitewindow.com" className="number">
                     info@thewhitewindow.com
                   </a>
                 </div>
