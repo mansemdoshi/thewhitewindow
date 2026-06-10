@@ -45,7 +45,7 @@ export default function FAQs() {
                 alt="latest-user-image"
                 width={567}
                 height={588}
-                src="/assets/images/services/latest-services-user-image-two.png"
+                src="/assets/images/about/faq-1.svg"
               />
             </div><br/><br/><br/><br/>
             {serviceCards

@@ -36,7 +36,7 @@ export default function Header4() {
                 </nav>
               </div>
               <div className="right-area">
-                <Link href={`/contact-white`} className="tmp-btn btn-primary">
+                <Link href={`/contact-us`} className="tmp-btn btn-primary">
                   Contact Me
                 </Link>
                 <div className="actions-area">

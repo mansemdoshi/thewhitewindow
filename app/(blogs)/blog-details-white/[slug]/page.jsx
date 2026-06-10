@@ -19,11 +19,11 @@ export default async function page({ params }) {
     <>
       <div className="tmp-white-version">
         <Header1 /><br/><br/>
-        <div className="section-head">
-            <h2 className="tmp-section-gapTop title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
+        <div className="container tmp-section-gapTop" style={{ marginBottom: '20px' }}>
+            <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
               {blog.title}
             </h2>
-        </div><br/>
+        </div>
         <BlogDetails isLight blog={blog} />
         <Footer3 />
         <Copyright /> <CommonComponents />

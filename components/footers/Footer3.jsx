@@ -1,6 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import { toast } from "react-toastify";
 import Demomodal from "../modals/Demomodal";
 import Chat from "../common/Chat";
 import DemoToggler from "../common/DemoToggler";
@@ -13,6 +16,36 @@ export default function Footer3({
   darkLogo = "/assets/images/logo/logo-dark.png",
   lightLogo = "/assets/images/logo/logo-white.png",
 }) {
+  const newsletterRef = useRef();
+
+  const handleNewsletter = (e) => {
+    e.preventDefault();
+    const email = newsletterRef.current.value.trim();
+    if (!email) {
+      toast.error("Please enter your email address");
+      return;
+    }
+    emailjs
+      .send(
+        "service_cyobi0y",
+        "template_4nbexqj",
+        {
+          name: "Newsletter Subscriber",
+          email: email,
+          subject: "New Newsletter Subscription",
+          message: `New newsletter subscription from: ${email}`,
+        },
+        "D79JdTqxXVCcQBXL4"
+      )
+      .then(() => {
+        toast.success("Subscribed to newsletter successfully!");
+        newsletterRef.current.value = "";
+      })
+      .catch(() => {
+        toast.error("Something went wrong. Please try again.");
+      });
+  };
+
   return (
     <>
       <footer className="footer-area footer-style-one-wrapper  tmp-section-gap">
@@ -43,13 +76,13 @@ export default function Footer3({
                     <span>Opening a Window </span> to <br /> to Healing and Hope
                   </p>
                   <form
-                    onSubmit={(e) => e.preventDefault()}
+                    onSubmit={handleNewsletter}
                     className="newsletter-form-1 mt--40"
                   >
-                    <input type="email" placeholder="Email Adress" />
-                    <span className="form-icon">
+                    <input type="email" ref={newsletterRef} placeholder="Email Address" required />
+                    <button type="submit" className="form-icon" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
                       <i className="fa-regular fa-envelope" />
-                    </span>
+                    </button>
                   </form>
                 </div>
               </div>

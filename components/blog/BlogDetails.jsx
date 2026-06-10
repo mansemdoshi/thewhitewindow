@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BlogSidebar from "./BlogSidebar";
 import Comment from "./Comment";
+import BlogContent from "./BlogContent";
 import { tags } from "@/data/blogs";
 import { slugify } from "@/utlis/slugify";
 export default function BlogDetails({ blog, isLight = false }) {
@@ -12,14 +13,6 @@ export default function BlogDetails({ blog, isLight = false }) {
         <div className="row">
           <div className="col-lg-12">
             <div className="blog-details-left-area">
-              <div className="thumbnail-top">
-                <Image
-                  alt="Corporate_business"
-                  src={blog.imageSrc}
-                  width={850}
-                  height={440}
-                />
-              </div>
               <div className="blog-details-discription">
                 <div className="blog-classic-tag">
                   <h4 className="title">By {blog.author}</h4>
@@ -30,18 +23,18 @@ export default function BlogDetails({ blog, isLight = false }) {
                         <h4 className="tag-title">{blog.tags[0]}</h4>
                       </div>
                     </li>
-                    {/* <li>
-                      <div className="tag-wrap">
-                        <i className="fa-solid fa-calendar-day" />
-                        <h4 className="tag-title">Comments (05)</h4>
-                      </div>
-                    </li> */}
                   </ul>
                 </div>
                 <h3 className="title split-collab">{blog.title}</h3>
-                <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>
-                  {blog.description}
-                </p>
+                <div className="blog-hero-image">
+                  <Image
+                    alt={blog.altText || blog.title}
+                    src={blog.imageSrc}
+                    width={600}
+                    height={480}
+                  />
+                </div>
+                <BlogContent content={blog.description} />
               </div>
               {/* <div className="quote-area-blog-details">
                 <p className="disc" style={{ whiteSpace: 'pre-wrap' }}>

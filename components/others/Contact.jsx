@@ -53,33 +53,37 @@ export default function Contact() {
         <div className="contact-info-wrap">
           <div className="row">
             <div className="col-lg-4 col-md-6">
-              <div className="contact-info tmp-scroll-trigger tmponhover tmp-fade-in animation-order-1">
-                <div className="contact-icon">
-                  <i className="fa-solid fa-location-dot" />
+              <a href="https://wa.me/+919820155137" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "inherit"}}>
+                <div className="contact-info tmp-scroll-trigger tmponhover tmp-fade-in animation-order-1">
+                  <div className="contact-icon">
+                    <i className="fa-brands fa-whatsapp" />
+                  </div>
+                  <h3 className="title">Whatsapp</h3>
+                  <p className="para">+91 98201 55137</p>
                 </div>
-                <h3 className="title">Address</h3>
-                <p className="para">North Vancouver, BC, Canada</p>
-              </div>
+              </a>
             </div>
             <div className="col-lg-4 col-md-6">
-              <div className="contact-info tmp-scroll-trigger tmponhover tmp-fade-in animation-order-2">
-                <div className="contact-icon">
-                  <i className="fa-solid fa-envelope" />
-                </div>
-                <h3 className="title">E-mail</h3>
-                <a href="mailto:info@thewhitewindw.com">
+              <a href="mailto:info@thewhitewindw.com" style={{textDecoration: "none", color: "inherit"}}>
+                <div className="contact-info tmp-scroll-trigger tmponhover tmp-fade-in animation-order-2">
+                  <div className="contact-icon">
+                    <i className="fa-solid fa-envelope" />
+                  </div>
+                  <h3 className="title">E-Mail</h3>
                   <p className="para">info@thewhitewindw.com</p>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
             <div className="col-lg-4 col-md-6">
-              <div className="contact-info tmp-scroll-trigger tmponhover tmp-fade-in animation-order-3">
-                <div className="contact-icon">
-                  <i className="fa-solid fa-phone" />
+              <a href="https://www.instagram.com/mansihasan" target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "inherit"}}>
+                <div className="contact-info tmp-scroll-trigger tmponhover tmp-fade-in animation-order-3">
+                  <div className="contact-icon">
+                    <i className="fa-brands fa-instagram" />
+                  </div>
+                  <h3 className="title">Instagram</h3>
+                  <p className="para">@mansihasan</p>
                 </div>
-                <h3 className="title">Phone</h3>
-                <p className="para">+91 98201 55137</p>
-              </div>
+              </a>
             </div>
           </div>
         </div>

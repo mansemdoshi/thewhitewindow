@@ -20,7 +20,16 @@ export default function page() {
     <>
       <div className="tmp-white-version">
         <Header /><br/><br/>
-        <Hero parentClass="tmp-skill-area tmp-section-gapTop" />
+        <div className="container tmp-section-gapTop">
+          <div className="section-head">
+            <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
+              About Me
+            </h2>
+          </div>
+        </div>
+        <div style={{ marginTop: '-80px' }}>
+          <Hero />
+        </div>
         <Facts /><br/><br/><br/><br/>
         <Education />
         <Skills parentClass="tmp-skill-area tmp-section-gapTop tmp-section-gapBottom" />

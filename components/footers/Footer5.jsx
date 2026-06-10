@@ -65,7 +65,7 @@ export default function Footer5() {
                         <a href="#">Terms And Condition</a>
                       </li>
                       <li>
-                        <Link href={`/contact-white`}>Contact</Link>
+                        <Link href={`/contact-us`}>Contact</Link>
                       </li>
                     </ul>
                   </div>

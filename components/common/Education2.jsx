@@ -89,8 +89,8 @@ export default function Education() {
               <div className="experiences-wrap-right-content">
                 <Image
                   className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
-                  alt="expert-img"
-                  src="/assets/images/experiences/expert-img.jpg"
+                  alt="psychologist-illustration"
+                  src="/assets/images/experiences/psychologist-illustration.svg"
                   width={945}
                   height={719}
                 />
