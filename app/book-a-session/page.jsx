@@ -1,9 +1,9 @@
 import Copyright from "@/components/footers/Copyright";
 import Footer from "@/components/footers/Footer1";
 import Header from "@/components/headers/Header1";
-import CalBooking from "@/components/common/CalBooking";
+import HjachiBooking from "@/components/common/HjachiBooking";
 import Link from "next/link";
-import React, { Suspense } from "react";
+import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 
 export const metadata = {
@@ -13,9 +13,11 @@ export const metadata = {
     "Book a therapy session with Manse M Doshi, Clinical Psychologist & Psychotherapist. Choose from individual psychotherapy, CBT, trauma therapy, assessments, and more.",
 };
 
-export default function page() {
-  const calUsername =
-    process.env.NEXT_PUBLIC_CALENDLY_USERNAME || "thewhitewindow";
+export default async function page({ searchParams }) {
+  // Service cards on /services link here as ?type=<service>; forward it to the
+  // HJachi widget as ?service=<id> to deep-link straight to that offering.
+  const params = await searchParams;
+  const service = params?.type;
 
   return (
     <>
@@ -33,15 +35,7 @@ export default function page() {
             <div className="row">
               <div className="col-lg-12">
                 <div className="cal-embed-wrapper">
-                  <Suspense
-                    fallback={
-                      <div className="cal-loading">
-                        Loading booking calendar...
-                      </div>
-                    }
-                  >
-                    <CalBooking calLink={calUsername} />
-                  </Suspense>
+                  <HjachiBooking service={service} />
                 </div>
               </div>
             </div>
