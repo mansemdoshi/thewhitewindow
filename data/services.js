@@ -360,7 +360,7 @@ export const serviceCards3 = [
   {
     iconClass: "fa-regular fa-person",
     title: "Individual Psychotherapy",
-    bookingUrl: "/book-a-session?type=individual-therapy",
+    bookingUrl: "/book-a-session?type=individual-psychotherapy",
     description:
       "A confidential space to explore emotions, patterns, and challenges. Sessions are customised to help you build emotional resilience and gain a deeper understanding of yourself.",
     animationOrder: 1,
