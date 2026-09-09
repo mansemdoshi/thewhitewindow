@@ -11,9 +11,9 @@ export default function Hero() {
             <Image
               className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
               alt="Manse M Doshi, Clinical Psychologist & Psychotherapist"
-              src="/assets/images/banner/hero-manse-seated.webp"
-              width={772}
-              height={720}
+              src="/assets/images/banner/banner-user-image-four-manse.png"
+              width={957}
+              height={778}
               priority
             />
           </div>
@@ -43,7 +43,7 @@ export default function Hero() {
                     href={`/about-me`}
                   >
                     <span className="icon-reverse-wrapper">
-                      <span className="btn-text">View Portfolio</span>
+                      <span className="btn-text">About Me</span>
                       <span className="btn-icon">
                         <i className="fa-sharp fa-regular fa-arrow-right" />
                       </span>
