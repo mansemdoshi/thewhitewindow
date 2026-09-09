@@ -30,7 +30,7 @@ export default function MobileMenu() {
         <div ref={innerRef} className="inner">
           <div className="header-top">
             <div className="logo">
-              <a href="index.html" className="logo-area">
+              <a href="/" className="logo-area">
                 <img
                   className="logo-dark"
                   alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
@@ -126,16 +126,16 @@ export default function MobileMenu() {
           <div className="social-wrapper mt--40">
             <span className="subtitle">find with me</span>
             <div className="social-link">
-              <a href="https://www.instagram.com/mansihasan">
+              <a href="https://www.instagram.com/mansihasan" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i className="fa-brands fa-instagram" />
               </a>
-              <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
+              <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="fa-brands fa-linkedin-in" />
               </a>
-              <a href="https://wa.me/+919820155137">
+              <a href="https://wa.me/919820155137" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                 <i className="fa-brands fa-whatsapp" />
               </a>
-              <a href="https://www.facebook.com/mansi.hasan">
+              <a href="https://www.facebook.com/mansi.hasan" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i className="fa-brands fa-facebook-f" />
               </a>
             </div>

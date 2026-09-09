@@ -6,14 +6,11 @@ import Hero from "@/components/homes/home-17/Hero";
 import Skills from "@/components/common/Skills";
 import Footer from "@/components/footers/Footer1";
 import Header from "@/components/headers/Header1";
-import Link from "next/link";
-import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
-  title:
-    "About || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+  title: "About Me",
   description:
-    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+    "Meet Manse M Doshi, Clinical Psychologist & Psychotherapist. Qualifications, therapeutic approach and the areas of mental health care she specialises in.",
 };
 export default function page() {
   return (

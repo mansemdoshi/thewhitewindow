@@ -1,51 +1,12 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import emailjs from "@emailjs/browser";
-import { useRef } from "react";
-import { toast } from "react-toastify";
-import Demomodal from "../modals/Demomodal";
-import Chat from "../common/Chat";
-import DemoToggler from "../common/DemoToggler";
-import ScrollTop from "../common/ScrollTop";
-import Sidebar from "../headers/Sidebar";
-import MobileMenu from "../headers/MobileMenu";
-import MobileMenuOnepage from "../headers/MobileMenuOnepage";
 import { footerLinks, footerLinksWhite } from "@/data/footerLinks";
+import NewsletterForm from "../common/NewsletterForm";
 export default function Footer3({
   darkLogo = "/assets/images/logo/logo-dark.png",
   lightLogo = "/assets/images/logo/logo-white.png",
 }) {
-  const newsletterRef = useRef();
-
-  const handleNewsletter = (e) => {
-    e.preventDefault();
-    const email = newsletterRef.current.value.trim();
-    if (!email) {
-      toast.error("Please enter your email address");
-      return;
-    }
-    emailjs
-      .send(
-        "service_cyobi0y",
-        "template_4nbexqj",
-        {
-          name: "Newsletter Subscriber",
-          email: email,
-          subject: "New Newsletter Subscription",
-          message: `New newsletter subscription from: ${email}`,
-        },
-        "D79JdTqxXVCcQBXL4"
-      )
-      .then(() => {
-        toast.success("Subscribed to newsletter successfully!");
-        newsletterRef.current.value = "";
-      })
-      .catch(() => {
-        toast.error("Something went wrong. Please try again.");
-      });
-  };
-
   return (
     <>
       <footer className="footer-area footer-style-one-wrapper  tmp-section-gap">
@@ -73,17 +34,9 @@ export default function Footer3({
                     </Link>
                   </div>
                   <p className="description">
-                    <span>Opening a Window </span> to <br /> to Healing and Hope
+                    <span>Opening a Window</span> to <br /> Healing and Hope
                   </p>
-                  <form
-                    onSubmit={handleNewsletter}
-                    className="newsletter-form-1 mt--40"
-                  >
-                    <input type="email" ref={newsletterRef} placeholder="Email Address" required />
-                    <button type="submit" className="form-icon" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-                      <i className="fa-regular fa-envelope" />
-                    </button>
-                  </form>
+                  <NewsletterForm />
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
@@ -125,20 +78,20 @@ export default function Footer3({
                       <span className="ft-icon">
                         <i className="fa-solid fa-phone" />
                       </span>
-                      <a href="#">+91 98201 55137</a>
+                      <a href="tel:+919820155137">+91 98201 55137</a>
                     </li>
                   </ul>
                   <div className="social-link footer">
-                    <a href="https://www.instagram.com/mansihasan">
+                    <a href="https://www.instagram.com/mansihasan" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <i className="fa-brands fa-instagram" />
                     </a>
-                    <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
+                    <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <i className="fa-brands fa-linkedin-in" />
                     </a>
-                    <a href="https://wa.me/+919820155137">
+                    <a href="https://wa.me/919820155137" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                       <i className="fa-brands fa-whatsapp" />
                     </a>
-                    <a href="https://www.facebook.com/mansi.hasan">
+                    <a href="https://www.facebook.com/mansi.hasan" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                       <i className="fa-brands fa-facebook-f" />
                     </a>
                   </div>

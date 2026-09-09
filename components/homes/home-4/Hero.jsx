@@ -10,10 +10,11 @@ export default function Hero() {
           <div className="bg-benner-img-four">
             <Image
               className="tmp-scroll-trigger tmp-zoom-in animation-order-1"
-              alt="banner-img-3"
-              src="/assets/images/banner/banner-user-image-four-manse.png"
-              width={957}
-              height={778}
+              alt="Manse M Doshi, Clinical Psychologist & Psychotherapist"
+              src="/assets/images/banner/hero-manse-seated.webp"
+              width={772}
+              height={720}
+              priority
             />
           </div>
           <div className="banner-four-right-bg-img">
@@ -75,7 +76,7 @@ export default function Hero() {
                     <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
                       <i className="fa-brands fa-linkedin-in" />
                     </a>
-                    <a href="https://wa.me/+919820155137">
+                    <a href="https://wa.me/919820155137">
                       <i className="fa-brands fa-whatsapp" />
                     </a>
                     <a href="https://www.facebook.com/mansi.hasan">

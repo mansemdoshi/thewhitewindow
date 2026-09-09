@@ -8,7 +8,7 @@ export default function Sidebar() {
       <div className="tmp-sidebar-area tmp_side_bar">
         <div className="inner">
           <div className="top-area">
-            <a href="index.html" className="logo">
+            <a href="/" className="logo">
               <img
                 className="logo-dark"
                 alt="The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist"
@@ -49,7 +49,7 @@ export default function Sidebar() {
                 <i className="fa-solid fa-phone" />
                 <div className="information tmp-link-animation">
                   <span>Phone</span>
-                  <a href="#" className="number">
+                  <a href="tel:+919820155137" className="number">
                     +91 98201 55137
                   </a>
                 </div>
@@ -80,16 +80,16 @@ export default function Sidebar() {
             <div className="social-wrapper mt--20">
               <span className="subtitle">find me on social media</span>
               <div className="social-link">
-                <a href="https://www.instagram.com/mansihasan">
+                <a href="https://www.instagram.com/mansihasan" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <i className="fa-brands fa-instagram" />
                 </a>
-                <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
+                <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <i className="fa-brands fa-linkedin-in" />
                 </a>
-                <a href="https://wa.me/+919820155137">
+                <a href="https://wa.me/919820155137" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                   <i className="fa-brands fa-whatsapp" />
                 </a>
-                <a href="https://www.facebook.com/mansi.hasan">
+                <a href="https://www.facebook.com/mansi.hasan" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <i className="fa-brands fa-facebook-f" />
                 </a>
               </div>
@@ -98,10 +98,11 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-      <a
+      <button
+        type="button"
         className="overlay_close_side_menu close_side_menu_active"
         onClick={closeSidebar}
-        href="#"
+        aria-label="Close menu"
       />
     </div>
   );

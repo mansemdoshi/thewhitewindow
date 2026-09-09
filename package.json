@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "eslint": "9.35.0",
-    "eslint-config-next": "15.5.3"
+    "eslint-config-next": "15.5.3",
+    "@eslint/eslintrc": "^3.3.1"
   }
 }

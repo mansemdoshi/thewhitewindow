@@ -3,14 +3,11 @@ import Copyright from "@/components/footers/Copyright";
 import Hero from "@/components/common/FAQs";
 import Footer from "@/components/footers/Footer1";
 import Header from "@/components/headers/Header1";
-import Link from "next/link";
-import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
-  title:
-    "FAQs || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+  title: "FAQs",
   description:
-    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+    "Common questions about starting therapy with The White Window: what a first session looks like, confidentiality, fees, session length and online appointments.",
 };
 export default function page() {
   return (

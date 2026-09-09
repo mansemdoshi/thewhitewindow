@@ -24,6 +24,12 @@
 .DS_Store
 *.pem
 
+# ssh keys / credentials (should live outside the repo entirely)
+*.pub
+id_rsa*
+id_ed25519*
+admin@*
+
 # debug
 npm-debug.log*
 yarn-debug.log*

@@ -39,16 +39,16 @@ export default function Header1({
               <div className="tmp-header-right">
                 <div className="social-share-wrapper d-none d-md-block">
                   <div className="social-link">
-                    <a href="https://www.instagram.com/mansihasan">
+                    <a href="https://www.instagram.com/mansihasan" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <i className="fa-brands fa-instagram" />
                     </a>
-                    <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
+                    <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <i className="fa-brands fa-linkedin-in" />
                     </a>
-                    <a href="https://wa.me/+919820155137">
+                    <a href="https://wa.me/919820155137" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                       <i className="fa-brands fa-whatsapp" />
                     </a>
-                    <a href="https://www.facebook.com/mansi.hasan">
+                    <a href="https://www.facebook.com/mansi.hasan" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                       <i className="fa-brands fa-facebook-f" />
                     </a>
                   </div>

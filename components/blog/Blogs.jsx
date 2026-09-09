@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import { blogData } from "@/data/blogs";
+import { allBlogs as defaultBlogs } from "@/data/blogs";
 import BlogSidebar from "./BlogSidebar";
 
 import Link from "next/link";
-export default function Blogs({ allBlogs = blogData, isLight = false }) {
+export default function Blogs({ allBlogs = defaultBlogs, isLight = false }) {
   return (
     <div className="blog-classic-area-wrapper tmp-section-gap">
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
-            {allBlogs.slice(0, 3).map((blog, i) => (
+            {allBlogs.map((blog, i) => (
               <div
                 key={i}
                 className={`blog-classic-card tmp-scroll-trigger tmponhover tmp-fade-in ${
@@ -19,7 +19,7 @@ export default function Blogs({ allBlogs = blogData, isLight = false }) {
               >
                 <div className="img-box">
                   <Link
-                    href={`/blog-details${isLight ? "-white" : ""}/${
+                    href={`/blog-details-white/${
                       blog.slug
                     }`}
                   >
@@ -64,7 +64,7 @@ export default function Blogs({ allBlogs = blogData, isLight = false }) {
                   </div>
                   <h2 className="title">
                     <Link
-                      href={`/blog-details${isLight ? "-white" : ""}/${
+                      href={`/blog-details-white/${
                         blog.slug
                       }`}
                     >
@@ -75,7 +75,7 @@ export default function Blogs({ allBlogs = blogData, isLight = false }) {
                   <div className="tmp-button-here">
                     <Link
                       className="tmp-btn hover-icon-reverse radius-round btn-border btn-md"
-                      href={`/blog-details${isLight ? "-white" : ""}/${
+                      href={`/blog-details-white/${
                         blog.slug
                       }`}
                     >
@@ -93,25 +93,7 @@ export default function Blogs({ allBlogs = blogData, isLight = false }) {
                 </div>
               </div>
             ))}
-            {allBlogs.length ? (
-              <div className="tmp-pagination-button">
-                <a href="#" className="pagination-btn">
-                  <i className="fa-sharp fa-regular fa-arrow-left" />
-                </a>
-                <a href="#" className="pagination-btn active">
-                  1
-                </a>
-                <a href="#" className="pagination-btn">
-                  2
-                </a>
-                <a href="#" className="pagination-btn">
-                  3
-                </a>
-                <a href="#" className="pagination-btn">
-                  <i className="fa-sharp fa-regular fa-arrow-right" />
-                </a>
-              </div>
-            ) : (
+            {allBlogs.length === 0 && (
               <h3 className="text-center">No Blogs Found</h3>
             )}
           </div>

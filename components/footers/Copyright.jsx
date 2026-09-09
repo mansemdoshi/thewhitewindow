@@ -9,20 +9,17 @@ export default function Copyright() {
             <div className="main-wrapper">
               <p className="copy-right-para tmp-link-animation">
                 ©{" "}
-                <a
-                  href="https://thewhitewindow.com"
-                  target="_blank"
-                >
+                <a href="https://thewhitewindow.com" target="_blank" rel="noopener noreferrer">
                   The White Window {new Date().getFullYear()}
                 </a>{" "}
                 | All Rights Reserved
               </p>{" "}
               <ul className="tmp-link-animation dark-content">
                 <li>
-                  <a href="#">Terms &amp; Conditions</a>
+                  <Link href={`/terms`}>Terms &amp; Conditions</Link>
                 </li>
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <Link href={`/privacy`}>Privacy Policy</Link>
                 </li>
                 <li>
                   <Link href={`/contact`}>Contact</Link>
@@ -30,13 +27,13 @@ export default function Copyright() {
               </ul>
               <ul className="tmp-link-animation light-content">
                 <li>
-                  <a href="#">Terms &amp; Conditions</a>
+                  <Link href={`/terms`}>Terms &amp; Conditions</Link>
                 </li>
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <Link href={`/privacy`}>Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href={`/contact-us`}>Contact</Link>
+                  <Link href={`/contact`}>Contact</Link>
                 </li>
               </ul>
             </div>

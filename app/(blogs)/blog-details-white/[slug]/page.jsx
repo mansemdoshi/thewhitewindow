@@ -3,18 +3,21 @@ import Copyright from "@/components/footers/Copyright";
 import Footer3 from "@/components/footers/Footer3";
 import Header1 from "@/components/headers/Header1";
 import { allBlogs } from "@/data/blogs";
-import Link from "next/link";
-import React from "react";
+import { notFound } from "next/navigation";
 import CommonComponents from "@/components/common/CommonComponents";
-export const metadata = {
-  title:
-    "Blog Details || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
-  description:
-    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
-};
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const item = allBlogs.find((entry) => entry.slug == slug);
+  if (!item) return { title: "Not Found" };
+  return {
+    title: item.title,
+    description: item.description || "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+  };
+}
 export default async function page({ params }) {
   const { slug } = await params;
-  const blog = allBlogs.find((blog) => blog.slug == slug) || allBlogs[0];
+  const blog = allBlogs.find((item) => item.slug == slug);
+  if (!blog) notFound();
   return (
     <>
       <div className="tmp-white-version">

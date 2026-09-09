@@ -1,54 +1,48 @@
 "use client";
 import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { toast } from "react-toastify";
+import {
+  CONTACT_EMAIL,
+  EMAILJS_PUBLIC_KEY,
+  EMAILJS_SERVICE_ID,
+  EMAILJS_TEMPLATE_ID,
+  TOAST_OPTIONS,
+} from "@/utlis/emailjs";
 
 export default function Contact({
   parentClass = "get-in-touch-area tmp-section-gapTop tmp-section-gapBottom",
 }) {
   const form = useRef();
+  const [sending, setSending] = useState(false);
 
   const sandMail = (e) => {
     e.preventDefault();
+    if (sending) return;
+    setSending(true);
     emailjs
-      .sendForm(
-        // EmailJS service ID - identifies which email service to use
-        "service_cyobi0y",
-
-        // EmailJS template ID - specifies which email template to use
-        "template_4nbexqj",
-
-        // Reference to the HTML form element containing user input
-        form.current,
-
-        {
-          // Public API key for authentication with EmailJS
-          publicKey: "D79JdTqxXVCcQBXL4",
-        }
-      )
+      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current, {
+        publicKey: EMAILJS_PUBLIC_KEY,
+      })
       .then((res) => {
         if (res.status == 200) {
-          toast.success("Message Sent successfully!", {
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          toast.success("Message Sent successfully!", TOAST_OPTIONS);
           form.current.reset();
         } else {
-          toast.error("Ops Message not Sent!", {
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+          toast.error("Oops! Message not sent.", TOAST_OPTIONS);
         }
-      });
+      })
+      .catch(() => {
+        // sendForm rejects on network errors and quota/auth failures; without
+        // this the visitor gets no feedback at all and assumes it went through.
+        toast.error(
+          `Sorry, your message could not be sent. Please email ${CONTACT_EMAIL} instead.`,
+          TOAST_OPTIONS
+        );
+      })
+      .finally(() => setSending(false));
   };
+
   return (
     <section className={parentClass} id="contacts">
       <div className="container">
@@ -100,8 +94,9 @@ export default function Contact({
                             <input
                               className="input-field"
                               id="contact-phone"
+                              name="phone"
                               placeholder="Phone Number"
-                              type="number"
+                              type="tel"
                               required
                             />
                           </div>
@@ -148,10 +143,11 @@ export default function Contact({
                               name="submit"
                               type="submit"
                               id="submit"
+                              disabled={sending}
                             >
                               <span className="icon-reverse-wrapper">
                                 <span className="btn-text">
-                                  Send Message
+                                  {sending ? "Sending..." : "Send Message"}
                                 </span>
                                 <span className="btn-icon">
                                   <i className="fa-sharp fa-regular fa-arrow-right" />

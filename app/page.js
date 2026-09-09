@@ -14,12 +14,6 @@ import Highlights from "@/components/common/Highlights";
 import Footer from "@/components/footers/Footer1";
 import CommonComponents from "@/components/common/CommonComponents";
 
-export const metadata = {
-  title:
-    "Home || The White Window",
-  description:
-    "Manse M Doshi - Clinical Psychologist & Psychotherapist",
-};
 export default function Home() {
   return (
     <>

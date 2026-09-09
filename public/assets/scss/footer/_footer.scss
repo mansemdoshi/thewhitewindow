@@ -141,6 +141,15 @@
     font-weight: 900;
     color: var(--color-heading);
     cursor: pointer;
+    // the submit control is a <button>, so strip the UA chrome
+    background: transparent;
+    border: 0 none;
+    padding: 0;
+  }
+  input:disabled,
+  .form-icon:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 }
 

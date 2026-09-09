@@ -46,10 +46,10 @@ export default function Blogs2({
                   <div className="blog-tags">
                     <ul>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-regular fa-user" />
                           {blog.author}
-                        </a>
+                        </span>
                       </li>
                     </ul>
                   </div>

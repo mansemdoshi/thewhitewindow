@@ -2,13 +2,10 @@ import Copyright from "@/components/footers/Copyright";
 import Footer from "@/components/footers/Footer1";
 import Header from "@/components/headers/Header1";
 import HjachiBooking from "@/components/common/HjachiBooking";
-import Link from "next/link";
-import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 
 export const metadata = {
-  title:
-    "Book a Session || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+  title: "Book a Session",
   description:
     "Book a therapy session with Manse M Doshi, Clinical Psychologist & Psychotherapist. Choose from individual psychotherapy, CBT, trauma therapy, assessments, and more.",
 };

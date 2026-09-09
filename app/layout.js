@@ -4,11 +4,34 @@ import "react-toastify/dist/ReactToastify.css";
 import LayoutWrapper from "@/components/common/LayoutWrapper";
 import Script from 'next/script';
 import { ToastContainer } from "react-toastify";
+const SITE_URL = "https://thewhitewindow.com";
+const SITE_NAME = "The White Window";
+const SITE_DESCRIPTION =
+  "Manse M Doshi - Clinical Psychologist & Psychotherapist. Individual, couples and family therapy, CBT, trauma-informed care and psychological assessments.";
+
 export const metadata = {
-  title:
-    "Home || The White Window",
-  description:
-    "Manse M Doshi - Clinical Psychologist & Psychotherapist",
+  // metadataBase lets Next resolve relative canonical/OG URLs to absolute ones.
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | Manse M Doshi | Clinical Psychologist & Psychotherapist`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    url: SITE_URL,
+    title: `${SITE_NAME} | Manse M Doshi | Clinical Psychologist & Psychotherapist`,
+    description: SITE_DESCRIPTION,
+    images: [{ url: "/assets/images/logo/logo-dark.png" }],
+  },
+  twitter: {
+    card: "summary",
+    title: `${SITE_NAME} | Manse M Doshi | Clinical Psychologist & Psychotherapist`,
+    description: SITE_DESCRIPTION,
+    images: ["/assets/images/logo/logo-dark.png"],
+  },
 };
 export default function RootLayout({ children }) {
   return (

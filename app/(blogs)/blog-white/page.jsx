@@ -3,11 +3,9 @@ import Copyright from "@/components/footers/Copyright";
 import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import Link from "next/link";
-import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
-  title:
-    "Blog || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+  title: "Blog",
   description:
     "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
 };

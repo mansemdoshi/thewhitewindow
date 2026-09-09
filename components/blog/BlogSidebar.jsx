@@ -25,7 +25,7 @@ export default function BlogSidebar({ isLight = false }) {
         <div className="body">
           {categories.map((post, index) => (
             <Link
-              href={`/blog${isLight ? "-white" : ""}/category/${slugify(
+              href={`/blog-white/category/${slugify(
                 post.title
               )}`}
               className="single-post"
@@ -66,7 +66,7 @@ export default function BlogSidebar({ isLight = false }) {
                 <h3 className="post-title">
                   <Link
                     className="link"
-                    href={`/blog-details${isLight ? "-white" : ""}/${
+                    href={`/blog-details-white/${
                       post.slug
                     }`}
                   >
@@ -87,34 +87,36 @@ export default function BlogSidebar({ isLight = false }) {
             <div className="about-me-details-head">
               <div className="about-me-img">
                 <Image
-                  alt="about-me-user-img"
-                  src="/assets/images/blog/about-me-user-img.png"
+                  alt="Manse M Doshi, Clinical Psychologist & Psychotherapist"
+                  src="/assets/images/banner/banner-user-image-four-manse.png"
                   width={600}
                   height={600}
                 />
               </div>
               <div className="about-me-right-content">
-                <h3 className="title">Fatima Afrafy</h3>
-                <p className="para">UI/UX Designer</p>
+                <h3 className="title">Manse M Doshi</h3>
+                <p className="para">Clinical Psychologist &amp; Psychotherapist</p>
                 <div className="social-link">
-                  <a href="https://www.instagram.com/mansihasan">
+                  <a href="https://www.instagram.com/mansihasan" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <i className="fa-brands fa-instagram" />
                   </a>
-                  <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a">
+                  <a href="https://www.linkedin.com/in/mansi-doshi-009ab620a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i className="fa-brands fa-linkedin-in" />
                   </a>
-                  <a href="https://wa.me/+919820155137">
+                  <a href="https://wa.me/919820155137" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                     <i className="fa-brands fa-whatsapp" />
                   </a>
-                  <a href="https://www.facebook.com/mansi.hasan">
+                  <a href="https://www.facebook.com/mansi.hasan" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <i className="fa-brands fa-facebook-f" />
                   </a>
                 </div>
               </div>
             </div>
             <p className="about-me-para">
-              Aliquam eros justo, posuere loborti viverra ullamcorper posuere
-              viverra .Aliquam eros justo, posuere justo, posuere.
+              I&rsquo;m a Clinical Psychologist and Psychotherapist dedicated to
+              fostering mental well&#8209;being through evidence&#8209;based
+              care, blending clinical rigour with empathy to create a safe space
+              for personal growth.
             </p>
           </div>
         </div>
@@ -127,7 +129,7 @@ export default function BlogSidebar({ isLight = false }) {
           <div className="tags-wrapper">
             {tags.map((tag, index) => (
               <Link
-                href={`/blog${isLight ? "-white" : ""}/tag/${slugify(tag)}`}
+                href={`/blog-white/tag/${slugify(tag)}`}
                 className="tag-link"
                 key={index}
               >

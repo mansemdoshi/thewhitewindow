@@ -2,14 +2,11 @@ import Copyright from "@/components/footers/Copyright";
 import Footer3 from "@/components/footers/Footer3";
 import Header1 from "@/components/headers/Header1";
 import Contact from "@/components/others/Contact";
-import Link from "next/link";
-import React from "react";
 import CommonComponents from "@/components/common/CommonComponents";
 export const metadata = {
-  title:
-    "Contact || The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+  title: "Contact",
   description:
-    "The White Window | Manse M Doshi | Clinical Psychologist & Psychotherapist",
+    "Get in touch with The White Window. Reach Manse M Doshi by email, WhatsApp or Instagram, or send a message to arrange a consultation.",
 };
 export default function page() {
   return (

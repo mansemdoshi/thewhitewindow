@@ -2,7 +2,7 @@
 
 export default function Chat() {
   return (
-    <a href="https://wa.me/+919820155137">
+    <a href="https://wa.me/919820155137" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
       <div className="ready-chatting-option">
         <label>
           <i className="fab fa-whatsapp" />
