@@ -2,7 +2,6 @@ import React from "react";
 import Chat from "./Chat";
 import Sidebar from "../headers/Sidebar";
 import MobileMenu from "../headers/MobileMenu";
-import MobileMenuOnepage from "../headers/MobileMenuOnepage";
 
 export default function CommonComponents() {
   return (
@@ -10,7 +9,6 @@ export default function CommonComponents() {
       <Chat />
       <Sidebar />
       <MobileMenu />
-      <MobileMenuOnepage />
     </>
   );
 }

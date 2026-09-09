@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import SplitText from "@/utlis/splittext";
 import gsap, { Back } from "gsap";
-import { closeMobilemenu, closeMobilemenu2 } from "@/utlis/toggleMobilemenu";
 export default function LayoutWrapper({ children }) {
   const pathname = usePathname();
   useEffect(() => {
