@@ -8,15 +8,22 @@
   --tww-font-display: var(--font-display), "Josefin Sans", "Jost", sans-serif;
   --tww-font-body: var(--font-body), "Lora", Georgia, serif;
   --tww-error: #b5566a;
+  /* One hover state for every button: Accent Deep with white text (5.5:1). */
+  --tww-hover-bg: #3b6e8f;
+  --tww-hover-text: #ffffff;
   --tww-header-h: 80px;
   --tww-section: clamp(64px, 9vw, 112px);
 }
 [data-theme="dark"] {
   --tww-error: #e3a3b0;
+  --tww-hover-bg: #a9cde3;
+  --tww-hover-text: #1f2a44;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --tww-error: #e3a3b0;
+    --tww-hover-bg: #a9cde3;
+    --tww-hover-text: #1f2a44;
   }
 }
 
@@ -271,25 +278,18 @@ a:hover {
   background: var(--tww-button-bg);
   color: var(--tww-button-text);
 }
-.btn-primary:hover {
-  background: color-mix(in srgb, var(--tww-button-bg) 92%, #000);
-  color: var(--tww-button-text);
+.btn:hover:not(:disabled) {
+  background: var(--tww-hover-bg);
+  border-color: var(--tww-hover-bg);
+  color: var(--tww-hover-text);
 }
 .btn-secondary {
   background: transparent;
   border-color: var(--tww-text);
   color: var(--tww-text);
 }
-.btn-secondary:hover {
-  background: var(--tww-surface);
-  color: var(--tww-text);
-}
 .btn-soft {
   background: var(--tww-accent-tint);
-  color: var(--tww-text);
-}
-.btn-soft:hover {
-  background: color-mix(in srgb, var(--tww-accent-tint) 92%, #000);
   color: var(--tww-text);
 }
 
@@ -300,20 +300,38 @@ a:hover {
   margin-top: 32px;
 }
 
+/* Secondary call to action: a soft pill that fills with ink on hover.
+   Quieter than .btn-primary, so a section still has one clear main action. */
 .text-link {
   display: inline-flex;
   align-items: center;
+  align-self: flex-start;
   gap: 8px;
+  min-height: 40px;
+  padding: 0 20px;
+  border-radius: var(--tww-radius-pill);
+  background: var(--tww-accent-tint-2);
   font-family: var(--tww-font-display);
   font-size: 13px;
+  line-height: 1.2;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--tww-accent-strong);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+.text-link svg {
+  transition: transform 200ms ease;
 }
 .text-link:hover {
-  color: var(--tww-text);
-  text-decoration: underline;
+  background: var(--tww-hover-bg);
+  color: var(--tww-hover-text);
+}
+.text-link:hover svg {
+  transform: translateX(3px);
+}
+.section-sky .text-link {
+  background: var(--tww-bg);
 }
 
 .icon-btn {
@@ -539,8 +557,8 @@ a:hover {
   transition: background-color 200ms ease;
 }
 .whatsapp-float:hover {
-  background: color-mix(in srgb, var(--tww-button-bg) 92%, #000);
-  color: var(--tww-button-text);
+  background: var(--tww-hover-bg);
+  color: var(--tww-hover-text);
 }
 @media (max-width: 479px) {
   .whatsapp-float {
@@ -603,7 +621,9 @@ a:hover {
 }
 .card .text-link {
   margin-top: auto;
-  padding-top: 20px;
+}
+.card p:has(+ .text-link) {
+  margin-bottom: 24px;
 }
 .card-meta {
   margin-bottom: 12px;
