@@ -39,11 +39,11 @@ export default function Home() {
             <div className="hero-arch arch">
               <Image
                 className="photo"
-                src="/images/manse-portrait.png"
-                alt="Manse M Doshi, clinical psychologist and psychotherapist"
-                width={367}
-                height={778}
-                sizes="(min-width: 900px) 220px, 45vw"
+                src="/images/manse-hero.jpg"
+                alt="Manse M Doshi smiling, seated in a warm, plant-filled room lined with books"
+                width={1145}
+                height={1374}
+                sizes="(min-width: 900px) 390px, 85vw"
                 priority
               />
             </div>
