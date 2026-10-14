@@ -1,16 +1,8 @@
 import Link from "next/link";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Logo from "@/components/brand/Logo";
 import SocialIcon from "@/components/ui/SocialIcon";
-import { EMAIL, LOCATION, PERSON, PHONE_DISPLAY, PHONE_HREF, SITE_NAME, TAGLINE, WHATSAPP_HREF, socials } from "@/data/site";
-
-const links = [
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/faq", label: "FAQs" },
-  { href: "/insights", label: "Insights" },
-  { href: "/privacy", label: "Privacy" },
-  { href: "/terms", label: "Terms" },
-];
+import { EMAIL, LOCATION, PERSON, PHONE_DISPLAY, PHONE_HREF, SITE_NAME, TAGLINE, socials } from "@/data/site";
 
 export default function Footer() {
   return (
@@ -28,31 +20,25 @@ export default function Footer() {
 
         <div>
           <h2 className="footer-title">Contact</h2>
-          <ul className="footer-list">
+          <ul className="footer-contact">
             <li>
+              <Mail size={18} strokeWidth={1.5} aria-hidden="true" />
               <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </li>
             <li>
+              <Phone size={18} strokeWidth={1.5} aria-hidden="true" />
               <a href={PHONE_HREF}>{PHONE_DISPLAY}</a>
-              {" · "}
-              <a href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer">
-                WhatsApp
-              </a>
             </li>
-            <li>{LOCATION} · Online across India and Canada</li>
+            <li>
+              <MapPin size={18} strokeWidth={1.5} aria-hidden="true" />
+              <span>
+                {LOCATION}
+                <br />
+                Online across India and Canada
+              </span>
+            </li>
           </ul>
         </div>
-
-        <nav aria-label="Footer">
-          <h2 className="footer-title">Links</h2>
-          <ul className="footer-list">
-            {links.map((link) => (
-              <li key={link.href}>
-                <Link href={link.href}>{link.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
 
         <div>
           <h2 className="footer-title">Follow</h2>
@@ -60,7 +46,7 @@ export default function Footer() {
             {socials.map((social) => (
               <li key={social.name}>
                 <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
-                  <SocialIcon name={social.name} />
+                  <SocialIcon name={social.name} size={20} />
                 </a>
               </li>
             ))}
@@ -68,10 +54,16 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container footer-bottom">
-        <p>
-          © {new Date().getFullYear()} {SITE_NAME} · {PERSON}
-        </p>
+      <div className="container">
+        <div className="footer-bottom">
+          <p>
+            © {new Date().getFullYear()} {SITE_NAME} · {PERSON}
+          </p>
+          <nav aria-label="Legal">
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
+          </nav>
+        </div>
       </div>
     </footer>
   );

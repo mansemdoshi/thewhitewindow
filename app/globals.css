@@ -1181,9 +1181,8 @@ a:hover {
 /* ---------- Footer ---------- */
 
 .site-footer {
-  margin-top: 0;
-  padding-top: 64px;
-  padding-bottom: 96px;
+  padding-top: 72px;
+  padding-bottom: 32px;
   background: var(--tww-surface-2);
   border-top: 1px solid var(--tww-border);
   font-size: 15px;
@@ -1196,11 +1195,17 @@ a:hover {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
 }
 @media (min-width: 1080px) {
   .footer-grid {
-    grid-template-columns: 1.7fr 1.2fr 0.8fr 0.8fr;
-    gap: 48px;
+    grid-template-columns: 2fr 1.2fr auto;
+    gap: 64px;
+  }
+  .footer-brand {
+    grid-column: auto;
   }
 }
 .footer-brand .logo img {
@@ -1210,35 +1215,45 @@ a:hover {
   margin-top: 20px;
   font-style: italic;
   font-size: 18px;
-  color: var(--tww-text);
+  color: var(--tww-text-soft);
 }
 .footer-title {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-size: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--tww-text-soft);
 }
-.footer-list {
+.site-footer a {
+  color: var(--tww-text);
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: var(--tww-accent-strong);
+  text-decoration: underline;
+}
+.footer-contact {
+  display: grid;
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.footer-list li {
-  margin-bottom: 10px;
+.footer-contact li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  line-height: 1.5;
 }
-.footer-list a {
-  color: var(--tww-text);
-}
-.footer-list a:hover {
-  color: var(--tww-text);
-  text-decoration-thickness: 2px;
+.footer-contact svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--tww-accent-strong);
 }
 .footer-social {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin: -10px 0 0 -10px;
+  gap: 8px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -1248,18 +1263,45 @@ a:hover {
   justify-content: center;
   width: 44px;
   height: 44px;
+  border: 1px solid var(--tww-border);
   border-radius: 50%;
-  color: var(--tww-text);
+  transition: background-color 200ms ease, border-color 200ms ease;
 }
 .footer-social a:hover {
-  background: var(--tww-surface);
+  background: var(--tww-bg);
+  border-color: var(--tww-accent-strong);
+  text-decoration: none;
 }
 .footer-bottom {
-  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-top: 56px;
   padding-top: 24px;
   border-top: 1px solid var(--tww-border);
   font-size: 14px;
   color: var(--tww-text-soft);
+}
+.footer-bottom p {
+  margin: 0;
+}
+.footer-bottom nav {
+  display: flex;
+  gap: 24px;
+}
+.site-footer .footer-bottom a {
+  color: var(--tww-text-soft);
+}
+.site-footer .footer-bottom a:hover {
+  color: var(--tww-text);
+}
+/* Leave room below so the floating WhatsApp button never covers the footer on phones. */
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 96px;
+  }
 }
 
 /* ---------- Motion ---------- */
