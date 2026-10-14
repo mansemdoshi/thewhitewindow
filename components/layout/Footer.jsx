@@ -1,20 +1,20 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Globe, Mail, MapPin, Phone } from "lucide-react";
 import Logo from "@/components/brand/Logo";
 import SocialIcon from "@/components/ui/SocialIcon";
-import { EMAIL, LOCATION, PERSON, PHONE_DISPLAY, PHONE_HREF, SITE_NAME, TAGLINE, socials } from "@/data/site";
+import { DESCRIPTOR, EMAIL, LOCATION, PERSON, PHONE_DISPLAY, PHONE_HREF, SITE_NAME, TAGLINE, socials } from "@/data/site";
 
 export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <Logo
-            variant="horizontal"
-            withDescriptor
-            height={56}
-            alt="The White Window — Manse M Doshi, Clinical Psychologist & Psychotherapist"
-          />
+          {/* The descriptor baked into the lockup is too small to read at footer size,
+              so it is set as live text under the plain logo instead. */}
+          <Logo variant="horizontal" height={48} alt="The White Window" />
+          <p className="footer-descriptor">
+            {PERSON} · {DESCRIPTOR}
+          </p>
           <p className="footer-tagline">{TAGLINE}</p>
         </div>
 
@@ -32,9 +32,15 @@ export default function Footer() {
             <li>
               <MapPin size={18} strokeWidth={1.5} aria-hidden="true" />
               <span>
+                <span className="footer-label">In person</span>
                 {LOCATION}
-                <br />
-                Online across India and Canada
+              </span>
+            </li>
+            <li>
+              <Globe size={18} strokeWidth={1.5} aria-hidden="true" />
+              <span>
+                <span className="footer-label">Online</span>
+                Worldwide
               </span>
             </li>
           </ul>
