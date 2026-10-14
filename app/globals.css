@@ -1231,14 +1231,21 @@ a:hover {
 .footer-brand .logo img {
   width: 300px;
 }
+/* Sits under the wordmark: indented by the mark's width plus gap
+   (148 of the lockup's 120-unit height, so 48px tall → ~59px). */
 .footer-descriptor {
-  margin: 14px 0 0;
-  font-family: var(--tww-font-display);
-  font-size: 13px;
-  line-height: 1.6;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  margin: -2px 0 0 59px;
+  font-size: 14px;
+  line-height: 1.5;
   color: var(--tww-text-soft);
+}
+.footer-descriptor-name {
+  display: block;
+  font-family: var(--tww-font-display);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tww-text);
 }
 .footer-tagline {
   margin-top: 20px;

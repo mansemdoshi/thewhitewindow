@@ -13,7 +13,8 @@ export default function Footer() {
               so it is set as live text under the plain logo instead. */}
           <Logo variant="horizontal" height={48} alt="The White Window" />
           <p className="footer-descriptor">
-            {PERSON} · {DESCRIPTOR}
+            <span className="footer-descriptor-name">{PERSON}</span>
+            {DESCRIPTOR}
           </p>
           <p className="footer-tagline">{TAGLINE}</p>
         </div>
