@@ -44,6 +44,7 @@ export default function Home() {
                 width={1145}
                 height={1374}
                 sizes="(min-width: 900px) 390px, 85vw"
+                quality={90}
                 priority
               />
             </div>

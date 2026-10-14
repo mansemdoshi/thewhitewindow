@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // 75 is the default; 90 is reserved for portrait photos where softness shows.
+  images: { qualities: [75, 90] },
   // One URL per page: old template and duplicate URLs move permanently (301) to their canonical home.
   async redirects() {
     const moved = (source, destination) => ({ source, destination, statusCode: 301 });
