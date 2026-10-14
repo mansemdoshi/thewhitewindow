@@ -1,47 +1,34 @@
-import Copyright from "@/components/footers/Copyright";
-import Footer from "@/components/footers/Footer1";
-import Header from "@/components/headers/Header1";
-import HjachiBooking from "@/components/common/HjachiBooking";
-import CommonComponents from "@/components/common/CommonComponents";
+import PageIntro from "@/components/PageIntro";
+import HjachiBooking from "@/components/HjachiBooking";
+import { WHATSAPP_HREF } from "@/data/site";
 
 export const metadata = {
-  title: "Book a Session",
+  title: "Book a session",
   description:
-    "Book a therapy session with Manse M Doshi, Clinical Psychologist & Psychotherapist. Choose from individual psychotherapy, CBT, trauma therapy, assessments, and more.",
+    "Book a therapy session with Manse M Doshi, clinical psychologist and psychotherapist. Individual psychotherapy, assessments, CBT, trauma-informed therapy and more, online or in person.",
+  alternates: { canonical: "/book-a-session" },
 };
 
-export default async function page({ searchParams }) {
-  // Service cards on /services link here as ?type=<service>; forward it to the
-  // HJachi widget as ?service=<id> to deep-link straight to that offering.
-  const params = await searchParams;
-  const service = params?.type;
+export default async function BookPage({ searchParams }) {
+  // Service links on /services arrive as ?type=<service id>; the widget takes it as ?service=.
+  const { type } = await searchParams;
 
   return (
     <>
-      <div className="tmp-white-version">
-        <Header /><br/><br/>
-        <div className="container tmp-section-gapTop">
-          <div className="section-head">
-            <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-              Book a Session
-            </h2>
-          </div>
+      <PageIntro eyebrow="Book a session" title="Choose a time that suits you.">
+        <p>
+          Pick a service and a time below. Prefer to talk first?{" "}
+          <a href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer">
+            Say hello on WhatsApp
+          </a>
+          .
+        </p>
+      </PageIntro>
+      <section className="section section-tight-top">
+        <div className="container">
+          <HjachiBooking service={typeof type === "string" ? type : undefined} />
         </div>
-        <section className="booking-area" style={{ paddingTop: '0' }}>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="cal-embed-wrapper">
-                  <HjachiBooking service={service} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <Footer />
-        <Copyright />
-        <CommonComponents />
-      </div>
+      </section>
     </>
   );
 }

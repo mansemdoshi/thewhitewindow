@@ -1,438 +1,90 @@
-import { slugify } from "@/utlis/slugify";
+// Services, in the order they appear on /services.
+// `id` doubles as the page anchor and the HJachi booking type (/book-a-session?type=<id>),
+// so changing one breaks deep links into the booking widget.
+// `featured` services appear as cards on the homepage (six at most).
 
 export const services = [
   {
-    id: 1,
-    icon: "fa-light fa-pen-ruler",
-    title: "Web Design",
-    projects: "120 Projects",
-    animationOrder: "1",
-  },
-  {
-    id: 2,
-    icon: "fa-light fa-bezier-curve",
-    title: "Ui/Ux Design",
-    projects: "241 Projects",
-    animationOrder: "2",
-  },
-  {
-    id: 3,
-    icon: "fa-light fa-lightbulb",
-    title: "Web Research",
-    projects: "240 Projects",
-    animationOrder: "3",
-  },
-  {
-    id: 4,
-    icon: "fa-light fa-envelope",
-    title: "Marketing",
-    projects: "331 Prodect",
-    animationOrder: "4",
-  },
-].map((elm) => {
-  return {
-    ...elm,
-    slug: slugify(elm.title),
-  };
-});
-
-export const services2 = [
-  {
-    id: 1,
-    num: "01.",
-    title: "Success Architects",
+    id: "individual-psychotherapy",
+    title: "Individual psychotherapy",
+    summary: "Anxiety, low mood, stress and life changes.",
     description:
-      "Business consulting consultants provide expert advice and guida the a businesses to help theme their performance efficiency",
-    animationOrder: "1",
-    isLink: true,
-    column: 1,
+      "A confidential space to explore emotions, patterns and challenges. Sessions are shaped around you, to help you build emotional resilience and understand yourself more deeply.",
+    forWhom: "Adults working through anxiety, low mood, stress, relationship difficulties or a period of change.",
+    featured: true,
   },
   {
-    id: 2,
-    num: "02.",
-    title: "Success Architects",
+    id: "premarital-counselling",
+    title: "Premarital counselling",
+    summary: "Communication, expectations, family boundaries.",
     description:
-      "App consulting consultants provide expert advice and guida the a businesses to help theme their performance efficiency",
-    animationOrder: "2",
-    isLink: true,
-    column: 1,
+      "A practical, evidence-based space to prepare for marriage. We cover communication, expectations, handling conflict, family boundaries and emotional readiness.",
+    forWhom: "Couples preparing for marriage, including those balancing family and cultural expectations.",
+    featured: true,
   },
   {
-    id: 3,
-    num: "03.",
-    title: "Success Architects",
+    id: "cbt-for-children-adolescents",
+    title: "CBT for children and adolescents",
+    summary: "Play-based CBT for worry, behaviour and low mood.",
     description:
-      "I specialize in creating solutions that are not only visually engaging but also align with business goals. From [list services, e.g., branding",
-    animationOrder: "3",
-    isLink: true,
-    column: 1,
+      "Age-appropriate cognitive behavioural strategies that help young people manage anxiety, worry, behavioural challenges and low mood. Therapy includes play-based techniques, parent coaching and clear tasks to practise at home between sessions.",
+    forWhom: "Children and teenagers, with their parents involved at every stage.",
+    featured: true,
   },
   {
-    id: 4,
-    num: "04.",
-    title: "Ui/visual Design",
+    id: "parental-guidance-support",
+    title: "Parental guidance and support",
+    summary: "Practical tools for everyday parenting.",
     description:
-      "I'm proud of what I've accomplished and excited to share my journey with you. I'm proud of what I've accomplished and excited to.",
-    animationOrder: "4",
-    isLink: false,
-    column: 2,
+      "A supportive space where parents learn practical strategies and emotional tools for everyday parenting challenges. From toddler routines to teenage conflict, sessions combine evidence-based techniques with guidance, so family life feels easier and more confident.",
+    forWhom: "Parents and caregivers of children of any age.",
+    featured: true,
   },
   {
-    id: 5,
-    num: "05.",
-    title: "Branding Design",
+    id: "psychological-assessments",
+    title: "Psychological assessment",
+    summary: "Clarity on learning, developmental or emotional concerns.",
     description:
-      "Interested in working together? Let's bring your ideas to life! Contact me, and let's start building something amazing.",
-    animationOrder: "5",
-    isLink: false,
-    column: 2,
+      "Structured, standardised assessments that bring clarity to learning, developmental, behavioural or emotional concerns. You receive a clear report and recommended next steps, which guide treatment and self-understanding.",
+    forWhom: "Children, adolescents and adults who want a clearer picture before deciding on support.",
+    process: [
+      "Book an assessment consultation online.",
+      "Complete the pre-assessment forms electronically.",
+      "Schedule the assessment, online or in person.",
+      "Receive a detailed report, with a follow-up session to talk through the results and a plan.",
+    ],
+    featured: true,
   },
   {
-    id: 6,
-    num: "06.",
-    title: "Motion Design",
+    id: "trauma-informed-therapy",
+    title: "Trauma-informed therapy",
+    summary: "Healing at a pace that feels safe.",
     description:
-      "Feel free to browse through my recent projects. Each one showcases my approach and dedication to detail, creativity, and.",
-    animationOrder: "6",
-    isLink: false,
-    column: 2,
-  },
-].map((elm) => {
-  return {
-    ...elm,
-    slug: slugify(elm.title),
-  };
-});
-
-export const services3 = [
-  {
-    id: 1,
-    icon: "feather-cast",
-    title: "UI/UX",
-    description:
-      "Passages there are many variations variations of of Lorem available.",
+      "Every session puts safety, empathy and pacing first, helping you heal from trauma and reclaim emotional strength.",
+    forWhom: "Anyone affected by difficult or overwhelming experiences, recent or long past.",
+    featured: true,
   },
   {
-    id: 2,
-    icon: "feather-map",
-    title: "App",
+    id: "cognitive-behavioral-therapy",
+    title: "Cognitive behavioural therapy (CBT)",
     description:
-      "Variations There are many variations of passages of Lorem available.",
+      "A practical approach that helps you notice and challenge unhelpful thoughts, so you can regulate emotions and respond to life with more resilience.",
+    forWhom: "Adults and young people dealing with anxiety, worry, low mood or stuck patterns.",
   },
   {
-    id: 3,
-    icon: "feather-phone-call",
-    title: "Support",
+    id: "acceptance-and-commitment-therapy",
+    title: "Acceptance and commitment therapy (ACT)",
     description:
-      "There are many variations of passages of Lorem available pro ability.",
-  },
-].map((elm) => {
-  return {
-    ...elm,
-    slug: slugify(elm.title),
-  };
-});
-
-export const services4 = [
-  {
-    id: 1,
-    num: "01.",
-    iconClass: "fa-regular fa-person",
-    title: "Individual Pyshotherapy",
-    description:
-      "A confidential space to explore emotions, patterns, and challenges. Sessions are customised to help you build emotional resilience and gain a deeper understanding of yourself.",
-    animationOrder: 1,
-    column: 1,
+      "A compassionate, mindfulness-based therapy that encourages acceptance, presence and living by what matters to you.",
+    forWhom: "People who want to make room for difficult feelings and move towards their values.",
   },
   {
-    id: 2,
-    num: "02.",
-    iconClass: "fa-light fa-brain",
-    title: "Psychological Assessments",
+    id: "grief-loss-counseling",
+    title: "Grief and loss counselling",
     description:
-      "Structured assessments that provide clarity on emotional, behavioural, or learning concerns. These insights guide effective treatment and self-awareness.",
-    animationOrder: 2,
-    column: 2,
-  },
-  {
-    id: 3,
-    num: "03.",
-    iconClass: "fa-light fa-spa",
-    title: "Cognitive Behavioral Therapy",
-    description:
-      "A practical approach that helps identify and challenge unhelpful thoughts, improving emotional regulation and resilience.",
-    animationOrder: 3,
-    column: 1,
-  },
-  {
-    id: 4,
-    num: "04.",
-    iconClass: "fa-regular fa-handshake",
-    title: "Acceptance and Commitment Therapy",
-    description:
-      "A compassionate, mindfulness-based therapy that encourages acceptance, presence, and values-driven living.",
-    animationOrder: 4,
-    column: 2,
-  },
-  {
-    id: 5,
-    num: "05.",
-    iconClass: "fa-regular fa-dove",
-    title: "Trauma-Informed Therapy",
-    description:
-      "Every session prioritises safety, empathy, and pacing, helping you heal from trauma and reclaim emotional strength.",
-    animationOrder: 5,
-    column: 1,
-  },
-  {
-    id: 6,
-    num: "06.",
-    iconClass: "fa-regular fa-heart",
-    title: "Grief & Loss Counseling",
-    description:
-      "A safe environment to process grief and rediscover balance after loss and help you acknowledge emotions, navigate change, and slowly rebuild meaning and peace.",
-    animationOrder: 6,
-    column: 2,
-  },
-  {
-    id: 7,
-    num: "07.",
-    iconClass: "fa-regular fa-heart",
-    title: "CBT for Children & Adolescents",
-    description:
-      "Age-appropriate cognitive behavioural strategies that help young people manage anxiety, worry, behavioural challenges, and low mood. Therapy includes play-based techniques, parent coaching, and clear home-based tasks to support progress between sessions.",
-    animationOrder: 6,
-    column: 1,
-  },
-  {
-    id: 8,
-    num: "08.",
-    iconClass: "fa-regular fa-heart",
-    title: "Parental Guidance & Support",
-    description:
-      "A supportive space where parents learn practical strategies and emotional tools for everyday parenting challenges. From toddler routines to adolescent conflict, sessions combine evidence-based techniques and guidance so families can function with more ease and confidence.",
-    animationOrder: 6,
-    column: 2,
-  },
-  {
-    id: 9,
-    num: "09.",
-    iconClass: "fa-regular fa-heart",
-    title: "Premarital Counselling",
-    description:
-      "A practical, evidence-based space to prepare for marriage covering opics like communication, expectations, conflict strategies, family boundaries, and emotional readiness.",
-    animationOrder: 6,
-    column: 1,
-  },
-].map((elm) => {
-  return {
-    ...elm,
-    slug: slugify(elm.title),
-  };
-});
-
-export const serviceCards = [
-  {
-    id: 1,
-    column: 1,
-    title: "What does a clinical psychologist do?",
-    description:
-      "A clinical psychologist in India helps diagnose and treat the mental health problems which are associated with anxiety, depression, trauma, OCD, and relationship issues. The primary modes of assessment are psychotherapy and psychological assessments.",  
-  },
-  {
-    id: 2,
-    column: 1,
-    title: "Is psychotherapy effective for anxiety, depression, or relationship problems?",
-    description:
-      "Therapy for depression, anxiety, and relationship issues has shown excellent results worldwide. In India, clinical psychologists have proven techniques like cognitive behavioural therapy, mindfulness, and interpersonal therapy to promote long-term well-being among people.",
-  },
-  {
-    id: 3,
-    column: 1,
-    title: "How do I know if I need therapy or medication?",
-    description:
-      "If you experience persistent sadness, anxiety, stress, sleep issues, or emotional overwhelms, you can start with a consultation with a clinical psychologist. If required, your therapist will then refer you to a psychiatrist for medication.",
-  },
-  {
-    id: 4,
-    column: 1,
-    title: "How do I prepare for my first therapy session?",
-    description:
-      "Write down your symptoms, concerns, and goals beforehand, and we will open up to your psychologist. They are there to help, not to judge. You do not need to prepare anything in general before coming to a therapy session for the first time.",  
-  },
-  {
-    id: 5,
-    column: 2,
-    title: "Can therapy help with family stress, marriage issues, or cultural conflicts?",
-    description:
-      "It helps you manage your expectations, communication gaps, and even the cultural pressures that are common in Indian households and relationships.",
-  },
-  {
-    id: 6,
-    column: 1,
-    title: "Is it normal to see a psychologist?",
-    description:
-      "Yes, it is completely normal to seek help. Mental health awareness in India is growing, and more people are visiting psychologists and therapists to live a happier and healthier life.",
-  },
-  {
-    id: 7,
-    column: 2,
-    title: "How long does therapy take to show results?",
-    description:
-      "Every person is unique, where the clients may notice positive changes after at least 6 therapy sessions. It requires a maximum of 4 to 6 therapy sessions. This depends on the type of issue, therapy goals, and your commitment to the process.",  
-  },
-  {
-    id: 8,
-    column: 1,
-    title: "Is everything I share in therapy kept confidential?",
-    description:
-      "Absolutely all the therapy sessions are 100% confidential. Details and discussions are not shared without your consent, except where a legality is required for safety reasons.",
-  },
-  {
-    id: 9,
-    column: 2,
-    title: "What are your consultation fees and payment options?",
-    description:
-      "Consultation fees depend upon the therapist's experience and session duration. I accept credit card payments via Stripe globally and also accept payments via GPay, UPI, bank transfers in India.",
-  },
-  {
-    id: 10,
-    column: 1,
-    title: "Do you offer online sessions?",
-    description:
-      "Yes, I offer secure video sessions for clients who prefer remote care. Book your first session online and choose a time that suits you.",  
-  },
-  {
-    id: 11,
-    column: 2,
-    title: "Do you work with children and teenagers?",
-    description:
-      "Yes. I work extensively with children and adolescents struggling with behavioural, emotional, or academic difficulties. I use play-based and expressive methods to help younger clients process their emotions safely and effectively.",
-  },
-  {
-    id: 12,
-    column: 1,
-    title: "What does a typical therapy session look like?",
-    description:
-      "Sessions are conversational and collaborative. I identify current challenges, explore thought and behaviour patterns, and develop practical strategies for change. For children, sessions often involve structured play, art, or storytelling.",
+      "A safe place to process grief and find balance after a loss. Together we acknowledge what you feel, navigate the changes, and slowly rebuild meaning and peace.",
+    forWhom: "Anyone grieving a person, a relationship, a role or a future they had imagined.",
   },
 ];
 
-export const services5 = [
-  {
-    title: "A Portfolio of Creativity",
-    description:
-      "Business consulting consultants provide expert advice and guida the a businesses to help theme their performance efficiency",
-  },
-  {
-    title: "My Portfolio of Innovation",
-    description:
-      "My work is driven by the belief that thoughtful design and strategic planning can empower brands, transform businesses",
-  },
-  {
-    title: "A Showcase of My Projects",
-    description:
-      "In this portfolio, you’ll find a curated selection of projects that highlight my skills in [Main Areas, e.g., responsive web design",
-  },
-];
-export const serviceCards2 = [
-  {
-    number: "01.",
-    title: "A Portfolio of Creativity",
-    description:
-      "Business consulting consultants provide expert advice and guida the a businesses to help theme their performance efficiency",
-  },
-  {
-    number: "02.",
-    title: "My Portfolio of Innovation",
-    description:
-      "My work is driven by the belief that thoughtful design and strategic planning can empower brands, transform businesses",
-  },
-  {
-    number: "03.",
-    title: "A Showcase of My Projects",
-    description:
-      "In this portfolio, you’ll find a curated selection of projects that highlight my skills in [Main Areas, e.g., responsive web design",
-  },
-];
-
-export const serviceCards3 = [
-  {
-    iconClass: "fa-regular fa-person",
-    title: "Individual Psychotherapy",
-    bookingUrl: "/book-a-session?type=individual-psychotherapy",
-    description:
-      "A confidential space to explore emotions, patterns, and challenges. Sessions are customised to help you build emotional resilience and gain a deeper understanding of yourself.",
-    animationOrder: 1,
-  },
-  {
-    iconClass: "fa-light fa-brain",
-    title: "Psychological Assessments",
-    bookingUrl: "/book-a-session?type=psychological-assessments",
-    description:
-      "Structured assessments that provide clarity on emotional, behavioural, or learning concerns. These insights guide effective treatment and self-awareness.",
-    animationOrder: 2,
-  },
-  {
-    iconClass: "fa-light fa-spa",
-    title: "Cognitive Behavioral Therapy",
-    bookingUrl: "/book-a-session?type=cognitive-behavioral-therapy",
-    description:
-      "A practical approach that helps identify and challenge unhelpful thoughts, improving emotional regulation and resilience.",
-    animationOrder: 3,
-  },
-  {
-    iconClass: "fa-regular fa-handshake",
-    title: "Acceptance and Commitment Therapy",
-    bookingUrl: "/book-a-session?type=acceptance-and-commitment-therapy",
-    description:
-      "A compassionate, mindfulness-based therapy that encourages acceptance, presence, and values-driven living.",
-    animationOrder: 4,
-  },
-  {
-    iconClass: "fa-regular fa-dove",
-    title: "Trauma-Informed Therapy",
-    bookingUrl: "/book-a-session?type=trauma-informed-therapy",
-    description:
-      "Every session prioritises safety, empathy, and pacing, helping you heal from trauma and reclaim emotional strength.",
-    animationOrder: 5,
-  },
-  {
-    iconClass: "fa-regular fa-heart",
-    title: "Grief & Loss Counseling",
-    bookingUrl: "/book-a-session?type=grief-loss-counseling",
-    description:
-      "A safe environment to process grief and rediscover balance after loss and help you acknowledge emotions, navigate change, and slowly rebuild meaning and peace.",
-    animationOrder: 6,
-  },
-  {
-    iconClass: "fa-regular fa-baby",
-    title: "CBT for Children & Adolescents",
-    bookingUrl: "/book-a-session?type=cbt-for-children-adolescents",
-    description:
-      "Age-appropriate cognitive behavioural strategies that help young people manage anxiety, worry, behavioural challenges, and low mood. Therapy includes play-based techniques, parent coaching, and clear home-based tasks to support progress between sessions.",
-    animationOrder: 7,
-  },
-  {
-    iconClass: "fa-regular fa-restroom",
-    title: "Parental Guidance & Support",
-    bookingUrl: "/book-a-session?type=parental-guidance-support",
-    description:
-      "A supportive space where parents learn practical strategies and emotional tools for everyday parenting challenges. From toddler routines to adolescent conflict, sessions combine evidence-based techniques and guidance so families can function with more ease and confidence.",
-    animationOrder: 8,
-  },
-  {
-    iconClass: "fa-regular fa-ring",
-    title: "Premarital Counselling",
-    bookingUrl: "/book-a-session?type=premarital-counselling",
-    description:
-      "A practical, evidence-based space to prepare for marriage covering topics like communication, expectations, conflict strategies, family boundaries, and emotional readiness.",
-    animationOrder: 9,
-  },
-];
-export const allServices = [
-  ...services,
-  ...services2,
-  ...services3,
-  ...services4,
-];
+export const featuredServices = services.filter((service) => service.featured);

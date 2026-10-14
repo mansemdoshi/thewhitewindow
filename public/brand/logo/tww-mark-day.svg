@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 120 120" role="img" aria-label="The White Window mark (day)"><title>The White Window mark (day)</title><circle cx="60" cy="60" r="46" fill="#C9E0EE" stroke="#1C2430" stroke-width="4"/>
+<circle cx="78" cy="34" r="7" fill="#F2C66D"/>
+<path d="M30 42 C33 38 37 38 39 42 C41 38 45 38 48 42" fill="none" stroke="#1C2430" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M42 30 C44 27 47 27 48 30 C49 27 52 27 54 30" fill="none" stroke="#1C2430" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="60" y1="14" x2="60" y2="44" stroke="#1C2430" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="21" y1="84" x2="99" y2="84" stroke="#1C2430" stroke-width="3.0" stroke-linecap="round"/>
+<path d="M60 84 C44 84 30 76 28 64 C40 66 52 74 60 84Z" fill="#E8F0F5" stroke="#1C2430" stroke-width="2" stroke-linejoin="round"/>
+<path d="M60 84 C76 84 90 76 92 64 C80 66 68 74 60 84Z" fill="#E8F0F5" stroke="#1C2430" stroke-width="2" stroke-linejoin="round"/>
+<path d="M60 84 C50 80 42 66 44 52 C52 58 58 70 60 84Z" fill="#6F9BB8" stroke="#1C2430" stroke-width="2" stroke-linejoin="round"/>
+<path d="M60 84 C70 80 78 66 76 52 C68 58 62 70 60 84Z" fill="#6F9BB8" stroke="#1C2430" stroke-width="2" stroke-linejoin="round"/>
+<path d="M60 84 C52 74 52 56 60 44 C68 56 68 74 60 84Z" fill="#FFFFFF" stroke="#1C2430" stroke-width="2" stroke-linejoin="round"/></svg>

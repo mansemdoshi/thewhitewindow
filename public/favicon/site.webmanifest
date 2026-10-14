@@ -1,0 +1,19 @@
+{
+  "name": "The White Window",
+  "short_name": "White Window",
+  "icons": [
+    {
+      "src": "/favicon/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#1C2430",
+  "background_color": "#FFFFFF",
+  "display": "standalone"
+}

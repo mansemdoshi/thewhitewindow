@@ -2,14 +2,15 @@ import Link from "next/link";
 import LegalPage from "@/components/legal/LegalPage";
 
 export const metadata = {
-  title: "Terms & Conditions",
+  title: "Terms & conditions",
+  alternates: { canonical: "/terms" },
   description:
-    "The terms governing use of the The White Window website, including booking and cancellation, scope of services, and important limitations.",
+    "The terms governing use of The White Window website, including booking and cancellation, scope of services, and important limitations.",
 };
 
 export default function page() {
   return (
-    <LegalPage title="Terms &amp; Conditions" lastUpdated="8 September 2026">
+    <LegalPage title="Terms & conditions" lastUpdated="8 September 2026">
       <p>
         These terms govern your use of thewhitewindow.com, the website of The
         White Window, the private practice of Manse M Doshi, Clinical
@@ -17,7 +18,7 @@ export default function page() {
         If you do not agree, please do not use the site.
       </p>
 
-      <div className="legal-callout">
+      <div className="callout">
         <p>
           <strong>This website is not an emergency service.</strong> If you or
           someone else is in immediate danger, or you are thinking about
@@ -159,7 +160,7 @@ export default function page() {
         through our <Link href="/contact">contact page</Link>.
       </p>
 
-      <div className="legal-callout">
+      <div className="callout">
         <p>
           <strong>Please note:</strong> these terms are provided for general
           information and are not legal advice. Cancellation periods, fee terms

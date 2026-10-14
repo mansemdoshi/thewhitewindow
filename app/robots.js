@@ -1,4 +1,4 @@
-const SITE_URL = "https://thewhitewindow.com";
+import { SITE_URL } from "@/data/site";
 
 export default function robots() {
   return {

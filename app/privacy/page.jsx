@@ -2,14 +2,15 @@ import Link from "next/link";
 import LegalPage from "@/components/legal/LegalPage";
 
 export const metadata = {
-  title: "Privacy Policy",
+  title: "Privacy policy",
+  alternates: { canonical: "/privacy" },
   description:
     "How The White Window collects, uses, stores and protects personal information submitted through this website, and how clinical records are handled separately.",
 };
 
 export default function page() {
   return (
-    <LegalPage title="Privacy Policy" lastUpdated="8 September 2026">
+    <LegalPage title="Privacy policy" lastUpdated="13 October 2026">
       <p>
         This Privacy Policy explains how The White Window (&ldquo;we&rdquo;,
         &ldquo;us&rdquo;), the private practice of Manse M Doshi, Clinical
@@ -27,11 +28,8 @@ export default function page() {
       <h3>Information you give us</h3>
       <ul>
         <li>
-          <strong>Contact forms.</strong> Your name, email address, phone
-          number, subject and message.
-        </li>
-        <li>
-          <strong>Newsletter signup.</strong> Your email address.
+          <strong>Contact form.</strong> Your name, the email address or
+          phone number you give us, and your message.
         </li>
         <li>
           <strong>Booking.</strong> Appointment requests are handled by our
@@ -61,10 +59,6 @@ export default function page() {
       <ul>
         <li>To respond to your enquiry and arrange appointments.</li>
         <li>To provide and administer psychological services you request.</li>
-        <li>
-          To send occasional updates, if — and only if — you subscribed to the
-          newsletter.
-        </li>
         <li>To keep the website secure and functioning.</li>
         <li>To meet professional, regulatory and legal obligations.</li>
       </ul>
@@ -80,17 +74,13 @@ export default function page() {
       </p>
       <ul>
         <li>
-          <strong>EmailJS</strong> — delivers contact form and newsletter
-          submissions to our inbox.
+          <strong>EmailJS</strong> — delivers contact form submissions to our
+          inbox.
         </li>
         <li>
           <strong>HJachi</strong> — hosts the booking flow embedded on our
-          &ldquo;Book a Session&rdquo; page, including scheduling and any
+          &ldquo;Book a session&rdquo; page, including scheduling and any
           payment steps.
-        </li>
-        <li>
-          <strong>Google Fonts</strong> — serves the typefaces used on the site;
-          your browser requests these files from Google when a page loads.
         </li>
         <li>
           <strong>Our hosting provider</strong> — serves the website and keeps
@@ -112,8 +102,7 @@ export default function page() {
       <h2>5. Retention</h2>
       <p>
         Website enquiries are kept only as long as needed to deal with them and
-        for a reasonable period afterwards. Newsletter subscriptions are kept
-        until you unsubscribe. Clinical records are retained for the period
+        for a reasonable period afterwards. Clinical records are retained for the period
         required by the professional standards applicable to the practice, which
         is generally longer.
       </p>
@@ -136,8 +125,7 @@ export default function page() {
         <li>confirm what personal information we hold about you;</li>
         <li>provide a copy of it;</li>
         <li>correct information that is inaccurate or incomplete;</li>
-        <li>delete information we no longer need to retain;</li>
-        <li>stop sending you the newsletter, at any time.</li>
+        <li>delete information we no longer need to retain.</li>
       </ul>
       <p>
         To make a request, email{" "}
@@ -174,7 +162,7 @@ export default function page() {
         through our <Link href="/contact">contact page</Link>.
       </p>
 
-      <div className="legal-callout">
+      <div className="callout">
         <p>
           <strong>Please note:</strong> this policy is provided for general
           information and is not legal advice. It should be reviewed by a

@@ -1,0 +1,85 @@
+/* The White Window brand tokens (brand kit v1.0, assets/tokens/tokens.css). Keep in sync with the kit; site-specific additions live in globals.css. */
+:root {
+  --tww-bg: #FFFFFF;
+  --tww-surface: #F7F3EC;
+  --tww-surface-2: #F3EBDD;
+  --tww-border: #E6E2D9;
+  --tww-text: #1C2430;
+  --tww-text-soft: #4A5566;
+  --tww-text-muted: #5B6472;
+  --tww-accent: #6F9BB8;
+  --tww-accent-strong: #3B6E8F;
+  --tww-accent-tint: #C9E0EE;
+  --tww-accent-tint-2: #E8F0F5;
+  --tww-highlight: #F2C66D;
+  --tww-button-bg: #1C2430;
+  --tww-button-text: #F3EBDD;
+  --tww-font-display: 'Josefin Sans', 'Jost', sans-serif;
+  --tww-font-body: 'Lora', Georgia, serif;
+  --tww-radius-sm: 8px; --tww-radius-md: 16px; --tww-radius-lg: 24px; --tww-radius-pill: 999px;
+  --tww-container: 1200px; --tww-gutter: 24px;
+  --tww-shadow-card: 0 8px 30px rgba(28,36,48,0.06);
+  color-scheme: light;
+}
+
+/* Dark mode: by attribute (preferred, lets the user toggle) ... */
+[data-theme="dark"] {
+  --tww-bg: #1F2A44;
+  --tww-surface: #2E3D5F;
+  --tww-surface-2: #3A4A70;
+  --tww-border: #3F4F78;
+  --tww-text: #F3EBDD;
+  --tww-text-soft: #B8C4DC;
+  --tww-text-muted: #8E9BB8;
+  --tww-accent: #8FB3C9;
+  --tww-accent-strong: #A9CDE3;
+  --tww-accent-tint: #3A4A70;
+  --tww-accent-tint-2: #2E3D5F;
+  --tww-highlight: #F2C66D;
+  --tww-button-bg: #F3EBDD;
+  --tww-button-text: #1F2A44;
+  color-scheme: dark;
+}
+
+/* ... and by system preference when no attribute is set */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --tww-bg: #1F2A44;
+    --tww-surface: #2E3D5F;
+    --tww-surface-2: #3A4A70;
+    --tww-border: #3F4F78;
+    --tww-text: #F3EBDD;
+    --tww-text-soft: #B8C4DC;
+    --tww-text-muted: #8E9BB8;
+    --tww-accent: #8FB3C9;
+    --tww-accent-strong: #A9CDE3;
+    --tww-accent-tint: #3A4A70;
+    --tww-accent-tint-2: #2E3D5F;
+    --tww-highlight: #F2C66D;
+    --tww-button-bg: #F3EBDD;
+    --tww-button-text: #1F2A44;
+    color-scheme: dark;
+  }
+}
+
+/* Base type */
+html { font-family: var(--tww-font-body); font-size: 17px; line-height: 1.7; color: var(--tww-text); background: var(--tww-bg); }
+h1, h2, h3, h4, .tww-display { font-family: var(--tww-font-display); font-weight: 400; letter-spacing: 0.01em; line-height: 1.15; color: var(--tww-text); }
+h1 { font-size: clamp(40px, 5vw, 56px); font-weight: 300; }
+h2 { font-size: clamp(32px, 4vw, 40px); }
+h3 { font-size: 24px; }
+.tww-eyebrow { font-family: var(--tww-font-display); font-size: 13px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: var(--tww-accent-strong); }
+.tww-wordmark { font-family: var(--tww-font-display); font-weight: 350; letter-spacing: 0.2em; text-transform: uppercase; }
+[data-theme="dark"] .tww-wordmark { font-weight: 300; }
+a { color: var(--tww-accent-strong); }
+
+/* Buttons */
+.tww-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 28px; border-radius: var(--tww-radius-pill);
+  font-family: var(--tww-font-display); font-size: 13px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border: 1.5px solid transparent; }
+.tww-btn-primary { background: var(--tww-button-bg); color: var(--tww-button-text); }
+.tww-btn-secondary { background: transparent; color: var(--tww-text); border-color: var(--tww-text); }
+.tww-btn-soft { background: var(--tww-accent-tint); color: var(--tww-text); }
+
+/* Surfaces */
+.tww-card { background: var(--tww-surface); border-radius: var(--tww-radius-lg); padding: 32px; border: 1px solid var(--tww-border); }
+.tww-arch { border-radius: 999px 999px 0 0; overflow: hidden; } /* arched image mask, echoes the window */
