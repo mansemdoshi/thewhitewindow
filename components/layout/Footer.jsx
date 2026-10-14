@@ -9,14 +9,20 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          {/* The descriptor baked into the lockup is too small to read at footer size,
-              so it is set as live text under the plain logo instead. */}
-          <Logo variant="horizontal" height={48} alt="The White Window" />
-          <p className="footer-descriptor">
-            <span className="footer-descriptor-name">{PERSON}</span>
-            {DESCRIPTOR}
-          </p>
-          <p className="footer-tagline">{TAGLINE}</p>
+          {/* Footer lockup: the mark spans the name, person, role and tagline. Built from the official
+              mark and wordmark files, because the descriptor baked into the horizontal
+              lockup is too small to read at footer size. */}
+          <div className="footer-lockup">
+            <Logo variant="mark" height={132} className="footer-mark" />
+            <div className="footer-lockup-text">
+              <Logo variant="wordmark" height={18} alt="The White Window" className="footer-wordmark" />
+              <p className="footer-descriptor">
+                <span className="footer-descriptor-name">{PERSON}</span>
+                {DESCRIPTOR}
+              </p>
+              <p className="footer-tagline">{TAGLINE}</p>
+            </div>
+          </div>
         </div>
 
         <div>

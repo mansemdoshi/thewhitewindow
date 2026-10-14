@@ -1228,16 +1228,39 @@ a:hover {
     grid-column: auto;
   }
 }
-.footer-brand .logo img {
-  width: 300px;
+.footer-lockup {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
-/* Sits under the wordmark: indented by the mark's width plus gap
-   (148 of the lockup's 120-unit height, so 48px tall → ~59px). */
+.footer-mark {
+  flex-shrink: 0;
+}
+.footer-mark img {
+  width: 132px;
+}
+.footer-lockup-text {
+  min-width: 0;
+}
+.footer-wordmark img {
+  width: 296px;
+}
 .footer-descriptor {
-  margin: -2px 0 0 59px;
+  margin: 10px 0 0;
   font-size: 14px;
   line-height: 1.5;
   color: var(--tww-text-soft);
+}
+/* Too narrow to sit side by side: stack the mark above the text. */
+@media (max-width: 600px) {
+  .footer-lockup {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer-mark img {
+    width: 80px;
+  }
 }
 .footer-descriptor-name {
   display: block;
@@ -1248,9 +1271,10 @@ a:hover {
   color: var(--tww-text);
 }
 .footer-tagline {
-  margin-top: 20px;
+  margin: 10px 0 0;
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--tww-text-soft);
 }
 .footer-title {
@@ -1270,7 +1294,7 @@ a:hover {
 }
 .footer-contact {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1286,9 +1310,9 @@ a:hover {
   margin-top: 2px;
   color: var(--tww-accent-strong);
 }
+/* Inline label so each contact item stays on one line. */
 .footer-label {
-  display: block;
-  margin-bottom: 2px;
+  margin-right: 8px;
   font-family: var(--tww-font-display);
   font-size: 12px;
   letter-spacing: 0.14em;
